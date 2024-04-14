@@ -9,7 +9,7 @@
     margin: 0 auto;
 }
 nav {
-    background-color: #0c0c0c;
+    background-color: #637A9F;
 }
 .nav-con {
     display: flex;
@@ -26,7 +26,7 @@ nav {
 }
 
 .nav-con a {
-    color: #cccccc;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -51,8 +51,20 @@ nav {
 .menu button {
     padding: 0 1rem;
     background-color: #2e2e2e;
-    border: 0px;
+    border: 1000px;
     border-radius: 25px;
     color: #cccccc;
     height: 25px;
+}
+.button .text {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+}
+.button:hover {
+    background-color: #FFBE00;
+}
+.button:hover .text {
+    color: #000000;
 }
