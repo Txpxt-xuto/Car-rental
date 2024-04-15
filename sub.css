@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lucida Sans Unicode";
+}
+.container {
+    max-width: 70vw;
+    margin: 0 auto;
+}
+nav {
+    background-color: #637A9F;
+}
+.nav-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+.menu {
+    display: flex;
+}
+.menu li {
+    list-style: none;
+    margin-left: 1rem;
+}
+
+.nav-con a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.menu input {
+    margin-right: -25px;
+    padding: 10px;
+    padding-right: 25px;
+    background-color: #2e2e2e;
+    border: 0px;
+    border-radius: 25px;
+    color: #cccccc;
+    height: 25px;
+}
+.menu input:focus {
+    border: 0px;
+    outline: none;
+}
+.menu button {
+    padding: 0 1rem;
+    background-color: #2e2e2e;
+    border: 0px;
+    border-radius: 25px;
+    color: #cccccc;
+    height: 25px;
+}
+.button .text {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+}
+.button:hover {
+    background-color: #FFBE00;
+}
+.button:hover .text {
+    color: #000000;
+}
+.Documentsusedforrentingservices
+{
+    display: block;
+}
+.subdocumentsusedforrentingservices
+{
+    color: #7d7d7d;
+}
+.notedocumentsusedforrentingservices
+{
+    font-weight: bold;
+}
+
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 16.5em;
+    box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 120ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #446b53;
+    padding: 0.5em;
+    padding-bottom: 3.4em;
+}
+.card::after {
+    content: "ทำการเช่า";
+    padding-top: 1.25em;
+    padding-left: 1.25em;
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    background: #00AC7C;
+    color: #fff;
+    height: 2.2em;
+    width: 280px;
+    transition: all 80ms;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 0;
+}
+.card .title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    position: absolute;
+    left: 0.625em;
+    bottom: 1.875em;
+    font-weight: 400;
+    color: #000;
+}
+.card .price {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 0.9em;
+    position: absolute;
+    left: 0.625em;
+    bottom: 0.625em;
+    color: #000;
+}
+.card:hover::after {
+    bottom: 0;
+    opacity: 1;
+}
+.card:active {
+    transform: scale(0.98);
+}
+.card:active::after {
+    content: "Added !";
+    height: 3.125em;
+}
+.image {
+    background: rgb(241, 241, 241);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
