@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>บริการรถเช่า rentalcar</title>
     <link rel="stylesheet" href="sub.css">
-    <script src="sub.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Kanit';font-size: 22px;
+        }
+        </style>
 </head>
 <body>
     <nav>
@@ -15,8 +21,8 @@
                     <a href="#">Narbar</a>
                 </div>
                 <ul class="menu">
-                    <li><a href="#">เลือกรถ</a></li>
-                    <li><a href="#RentalRules">วิธีการจองรถ</a></li>
+                    <li><a href="#RentalRules">กติกาการเช่า</a></li>
+                    <li><a href="#Document">เอกสารที่ใช้</a></li>
                     <li><a href="#">menu#3</a></li>
                     <li>
                         <input type="text" class="nav-search-box" /><a href="">🔍</a>
@@ -48,6 +54,8 @@
                 7.  กรณีเช่าเพิ่มจากที่แจ้งไว้ ลูกค้าจะต้องโอนเงินค่าเช่าทันที โดยจะไม่มีการหักจากเงินประกันใดๆทั้งสิ้น<br>
             </p>
         </div>
+    </section>
+    <section class="Document section" id="Document">
         <div class="Documentsusedforrentingservices">
             <h1>เอกสารที่ใช้เช่าบริการ</h1>
             <p class="documentsusedforrentingservices">
@@ -64,33 +72,30 @@
             </p>
         </div>
     </section>
-    <div class="card">
-        <div class="image">
-            <img src="https://i.pinimg.com/736x/94/ae/93/94ae93dc5587494588a222687bfe2de5.jpg" alt="Girl in a jacket" width="284" height="200">
+    
+    
+    <section class="RentalRules section" id="RentalRules">
+        <h2>Accordion with symbols</h2>
+        <button class="accordion">มีบริการรับส่งถึงหน้าบ้านไหม</button>
+        <div class="panel">
+            <p>ทางร้านมีบริการรับส่งถึงบ้าน โดยจะคิดตามระยะทางจริงและค่าบริการเที่ยวละ 100 บาท</p>
         </div>
-        <span class="title">Cool Chair</span>
-        <span class="price">$100</span>
-    </div>
-    <div class="card">
-        <div class="image">
-            <img src="https://i.pinimg.com/564x/0d/96/e1/0d96e1fb1189ce7f56cca74e5810dcbb.jpg" alt="Girl in a jacket" width="284" height="200">
+        <button class="accordion">จำกัดระยะทางต่อวันไหม</button>
+        <div class="panel">
+            <p>ทางร้านไม่ได้จำกัดระยะทางต่อวัน สามารถขับได้ตามอัธยาศัย</p>
         </div>
-        <span class="title">Cool Chair</span>
-        <span class="price">$100</span>
-    </div>
-    <div class="card">
-        <div class="image">
-            <img src="https://i.pinimg.com/564x/14/11/fe/1411feccfc678080ce26cc09a9936238.jpg" alt="Girl in a jacket" width="284" height="200">
+        <button class="accordion">นำรถยนต์หรือจักรยานยนต์มาฝากกับทางร้านได้มั้ย</button>
+        <div class="panel">
+            <p>ทางร้านรับฝากทั้งรถยนต์และจักรยานยนต์ แต่หากนำมาฝากต้องไม่ล็อกพวงมาลัยหรือล็อกคอจักรยานยนต์ และต้องนำกุญแจฝากไว้กับทางร้าน</p>
         </div>
-        <span class="title">Cool Chair</span>
-        <span class="price">$100</span>
-    </div>
-    <div class="card">
-        <div class="image">
-            <img src="https://i.pinimg.com/474x/3d/cc/5c/3dcc5c8ef64a86e4080940a709bcf9c4.jpg" alt="Girl in a jacket" width="284" height="200">
-        </div>
-        <span class="title">Cool Chair</span>
-        <span class="price">$100</span>
-    </div>
+    </section>
+    
+    <script src="sub.js"></script>
+
+
+
+
+
+    
 </body>
 </html>
