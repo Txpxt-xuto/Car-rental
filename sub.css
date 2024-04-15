@@ -1,12 +1,16 @@
+body {
+    font-family: 'Kanit';
+    /*font-size: 14px;*/
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Lucida Sans Unicode";
 }
 .container {
     max-width: 70vw;
     margin: 0 auto;
+    font-size: 14px;
 }
 nav {
     background-color: #637A9F;
@@ -68,9 +72,13 @@ nav {
 .button:hover .text {
     color: #000000;
 }
+
+
+
 .Documentsusedforrentingservices
 {
     display: block;
+    font-size: 14px;
 }
 .subdocumentsusedforrentingservices
 {
@@ -82,68 +90,58 @@ nav {
 }
 
 
-.card {
-    position: relative;
-    width: 300px;
-    height: 16.5em;
-    box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+
+
+
+
+
+
+
+
+
+.accordion {
+    background-color: #eee;
+    color: #444;
     cursor: pointer;
-    transition: all 120ms;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #446b53;
-    padding: 0.5em;
-    padding-bottom: 3.4em;
-}
-.card::after {
-    content: "ทำการเช่า";
-    padding-top: 1.25em;
-    padding-left: 1.25em;
-    position: absolute;
-    left: 0;
-    bottom: -60px;
-    background: #00AC7C;
-    color: #fff;
-    height: 2.2em;
-    width: 280px;
-    transition: all 80ms;
-    font-weight: 600;
-    text-transform: uppercase;
-    opacity: 0;
-}
-.card .title {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.9em;
-    position: absolute;
-    left: 0.625em;
-    bottom: 1.875em;
-    font-weight: 400;
-    color: #000;
-}
-.card .price {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 0.9em;
-    position: absolute;
-    left: 0.625em;
-    bottom: 0.625em;
-    color: #000;
-}
-.card:hover::after {
-    bottom: 0;
-    opacity: 1;
-}
-.card:active {
-    transform: scale(0.98);
-}
-.card:active::after {
-    content: "Added !";
-    height: 3.125em;
-}
-.image {
-    background: rgb(241, 241, 241);
+    padding: 20px;
     width: 100%;
-    height: 100%;
-    display: grid;
-    place-items: center;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
 }
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2212";
+}
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
