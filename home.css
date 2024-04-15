@@ -51,7 +51,7 @@ nav {
 .menu button {
     padding: 0 1rem;
     background-color: #2e2e2e;
-    border: 1000px;
+    border: 0px;
     border-radius: 25px;
     color: #cccccc;
     height: 25px;
@@ -67,4 +67,16 @@ nav {
 }
 .button:hover .text {
     color: #000000;
+}
+.Documentsusedforrentingservices
+{
+    display: block;
+}
+.subdocumentsusedforrentingservices
+{
+    color: #7d7d7d;
+}
+.notedocumentsusedforrentingservices
+{
+    font-weight: bold;
 }
