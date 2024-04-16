@@ -1,6 +1,5 @@
 body {
     font-family: 'Kanit';
-    /*font-size: 14px;*/
 }
 * {
     margin: 0;
@@ -83,12 +82,15 @@ nav {
 
 
 
-
+.Servicerentalrules
+{
+    font-size: 16px;
+}
 
 .Documentsusedforrentingservices
 {
     display: block;
-    font-size: 14px;
+    font-size: 16px;
 }
 .subdocumentsusedforrentingservices
 {
