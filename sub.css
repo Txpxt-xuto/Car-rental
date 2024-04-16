@@ -1,76 +1,7 @@
 body {
     font-family: 'Kanit';
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.container {
-    max-width: 70vw;
-    margin: 0 auto;
-    font-size: 14px;
-}
-nav {
-    background-color: #637A9F;
-}
-.nav-con {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-}
-.menu {
-    display: flex;
-}
-.menu li {
-    list-style: none;
-    margin-left: 1rem;
-}
 
-.nav-con a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.logo a {
-    font-size: 1.5rem;
-    font-weight: bolder;
-}
-.menu input {
-    margin-right: -25px;
-    padding: 10px;
-    padding-right: 25px;
-    background-color: #2e2e2e;
-    border: 0px;
-    border-radius: 25px;
-    color: #cccccc;
-    height: 25px;
-}
-.menu input:focus {
-    border: 0px;
-    outline: none;
-}
-.menu button {
-    padding: 0 1rem;
-    background-color: #2e2e2e;
-    border: 0px;
-    border-radius: 25px;
-    color: #cccccc;
-    height: 25px;
-}
-.button .text {
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 1em;
-    transition: 400ms;
-}
-.button:hover {
-    background-color: #FFBE00;
-}
-.button:hover .text {
-    color: #000000;
-}
 
 
 
@@ -86,7 +17,10 @@ nav {
 {
     font-size: 16px;
 }
-
+.servicerentalrules
+{
+    left: 50px;
+}
 .Documentsusedforrentingservices
 {
     display: block;
