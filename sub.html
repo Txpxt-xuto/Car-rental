@@ -4,58 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>บริการรถเช่า rentalcar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
     <link rel="stylesheet" href="sub.css">
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <style>
-        body {
-            font-family: 'Kanit';font-size: 22px;
-        }
-        </style>
 </head>
 <body>
-  <nav>
-    <div class="nav-bar">
-        <i class='bx bx-menu sidebarOpen' ></i>
-        <span class="logo navLogo"><a href="#">CodingLab</a></span>
-        <div class="menu">
-            <div class="logo-toggle">
-                <span class="logo"><a href="#">CodingLab</a></span>
-                <i class='bx bx-x siderbarClose'></i>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+  <header class="header" id="header">
+    <nav class="nav container">
+        <a href="#" class="nav__logo">
+            Tapat Toungsakul
+        </a>
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list grid" >
+                <li class="nav__item">
+                    <a href="#RentalRules" class="nav__link">
+                    <i class="ri-home-5-line"></i>กติกาการเช่าบริการ
+                </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#Document" class="nav__link">
+                    <i class="ri-trophy-line"></i>เอกสารที่ใช้เช่าบริการ
+                </a>
+                </li>
+                <li class="nav__item"> 
+                    <a href="#Question" class="nav__link">
+                    <i class="ri-book-open-line"></i>คำถามที่พบบ่อย
+                </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#projects" class="nav__link">
+                    <i class="ri-image-line"></i>Projects
+                </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">
+                    <i class="ri-chat-3-line"></i>Contact
+                </a>
+                </li>
             </ul>
-        </div>
-        <div class="darkLight-searchBox">
-            <div class="dark-light">
-                <i class='bx bx-moon moon'></i>
-                <i class='bx bx-sun sun'></i>
-            </div>
-            <div class="searchBox">
-                <div class="searchToggle">
-                <i class='bx bx-x cancel'></i>
-                <i class='bx bx-search search'></i>
-                </div>
-                <div class="search-field">
-                    <input type="text" placeholder="Search...">
-                    <i class='bx bx-search'></i>
-                </div>
+            <!--Close Button-->
+            <div class="nav__close" id="nav-close">
+                <i class="ri-close-line"></i>
             </div>
         </div>
-    </div>
-</nav>
-
-
-
-
-
-
-
-
+    </nav>
+  </header>
+  <!--==================== MAIN ====================-->
+  <main class="main">
+    <!--==================== HOME ====================-->
     <section class="RentalRules section" id="RentalRules">
         <div class="Servicerentalrules">
             <h3>กติกาการเช่าบริการ</h3>
@@ -102,7 +97,7 @@
     </section>
     
     
-    <section class="RentalRules section" id="RentalRules">
+    <section class="Question section" id="Question">
         <h2>Accordion with symbols</h2>
         <button class="accordion">มีบริการรับส่งถึงหน้าบ้านไหม</button>
         <div class="panel">
@@ -117,7 +112,18 @@
             <p>ทางร้านรับฝากทั้งรถยนต์และจักรยานยนต์ แต่หากนำมาฝากต้องไม่ล็อกพวงมาลัยหรือล็อกคอจักรยานยนต์ และต้องนำกุญแจฝากไว้กับทางร้าน</p>
         </div>
     </section>
+  </main>
+
+
+
+
+
+
+
+
     
+
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     <script src="sub.js"></script>
 
 
