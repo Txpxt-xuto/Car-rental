@@ -213,3 +213,40 @@ a {
         grid-template-columns: 1fr;
     }
 }
+
+
+
+
+
+
+
+
+.rentbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 15px;
+    background-color: #41B06E;
+    outline: 3px #41B06E solid;
+    outline-offset: -3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.rentbtn .text {
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+}
+
+.rentbtn:hover {
+    background-color: transparent;
+}
+
+.rentbtn:hover .text {
+    color: #41B06E;
+}
