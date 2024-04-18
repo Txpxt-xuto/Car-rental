@@ -126,7 +126,7 @@ a {
 }
 
 .car_img_content_link:hover img {
-    filter: drop-shadow(0px 10px 60px rgb(0 0 0 / 30%));
+    filter: drop-shadow(0px 10px 60px rgb(255, 255, 255));
 }
 
 .car_img_content {
