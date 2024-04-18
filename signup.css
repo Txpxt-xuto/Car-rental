@@ -213,14 +213,7 @@ a {
         grid-template-columns: 1fr;
     }
 }
-
-
-
-
-
-
-
-
+/*button in card*/
 .rentbtn {
     display: flex;
     justify-content: center;
