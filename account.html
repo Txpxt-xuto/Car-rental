@@ -13,32 +13,27 @@
 
     </head>
     <body>
-        <!--<div class ="header">-->
         <div class="container">
             <div class="navbar">
                 <div class="logo">
                     <a href="home.html"><img src="images/logo.png" width="125px"></a>
                 </div>
-                 <nav>
+                <nav>
                     <ul id="MenuItems">
                         <li><a href="home.html">Home</a></li>
-                         <li><a href="products.html">Products</a></li>
-                         <li><a href="">About</a></li>
-                         <li><a href="">Contact</a></li>
-                         <li><a href="account.html">Account</a></li>
-
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
                     </ul>
                 </nav>
                 <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
                 <img src="images/menu.png" class="menu-icon" onClick="menutoggle()" >
             </div>
-           
+        
         </div>
-    <!--</div>-->
-    
         
         <!------------------------------ account-page details------------------------------>
-
         <div class="account-page">
             <div class="container">
                 <div class="row">
@@ -58,7 +53,6 @@
                                 <button type="submit" class="btn">Login</button>
                                 <a href="">Forgot password</a>
                             </form>
-                            
                             <form id="RegForm">
                                 <input type="text" placeholder="username">
                                 <input type="email" placeholder="email">
@@ -72,84 +66,25 @@
             </div>
         </div>
         
-       
         <!----------------------------------footer------------------------------------->
         <div class ="footer">
         <div class="container">
-            
             <div class="row">
-                <div class="footer-col-1">
-                    <h3>Download Our App</h3>
-                    <p>Download App for Android and ios mobile phone.</p>
-                    <div class="app-logo">
-                        <img src="images/play-store.png" alt="">
-                        <img src="images/app-store.png" alt="">
-                    </div>
-                </div>
                 <div class="footer-col-2">
                     <img src="images/logo-white.png">
-                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
-                </div>
-                <div class="footer-col-3">
-                    <h3>Useful Links</h3>
-                   <ul>
-                       <li>Coupons</li>
-                       <li>Blog Post</li>
-                       <li>Return Policy</li>
-                       <li>Join Affiliate</li>
-                    </ul>
+                    <p>Thank you for coming to use our service.</p>
                 </div>
                 <div class="footer-col-4">
                     <h3>Follow us</h3>
-                   <ul>
-                       <li>Facebook</li>
-                       <li>Twitter</li>
-                       <li>Instagram</li>
-                       <li>Youtube</li>
+                    <ul>
+                        <li><a href="https://www.facebook.com/profile.php?id=100089833762334">Facebook</a></li>
+                        <li>081-9424507 (คุณแก้ว)</li>
+                        <li>098-2625255 (คุณโต้)</li>
                     </ul>
                 </div>
-                
             </div>
-            
-            <hr><!--horizontal line-->
-            <p class="copyright">Copyright 2021 - Apurba Kr. Pramanik</p>
-            
         </div>
     </div>
-        
-        
-        <!-----------------------------------js for toggle menu-------------------------------------->
-        <script>
-            var menuItems=document.getElementById("MenuItems");
-            
-            MenuItems.style.maxHeight="0px";
-            function menutoggle(){
-                if(MenuItems.style.maxHeight == "0px"){
-                    MenuItems.style.maxHeight="200px";
-                }
-                else{
-                    MenuItems.style.maxHeight="0px";
-                }
-            }
-        </script>
-        
-                <!-----------------------------------js for toggle form-------------------------------------->
-        <script>
-            var LoginForm=document.getElementById("LoginForm");
-            var RegForm=document.getElementById("RegForm");
-            var Indicator=document.getElementById("Indicator");
-            
-            function register(){
-                RegForm.style.transform="translateX(0px)";
-                LoginForm.style.transform="translateX(0px)";
-                Indicator.style.transform="translateX(100px)"
-            }
-            function login(){
-                RegForm.style.transform="translateX(300px)";
-                LoginForm.style.transform="translateX(300px)";
-                Indicator.style.transform="translateX(0px)";
-            }
-        </script>
-
+    <script src="account.js"></script>
     </body>
 </html>
