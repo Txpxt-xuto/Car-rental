@@ -823,9 +823,6 @@ a {
   display: flex;
   animation: scrolling var(--marquee-animation-duration) linear infinite;
 }
-/*.marquee-content:hover {
-  animation-play-state: paused;
-} */
 @keyframes scrolling {
   0% { transform: translateX(0); }
   100% { transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements))); }
@@ -844,7 +841,6 @@ a {
 
 .marquee-content li img {
   width: 100%;
-  /* height: 100%; */
   border: 2px solid #eee;
 }
 
