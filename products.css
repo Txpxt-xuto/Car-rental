@@ -262,8 +262,6 @@ ul{
     text-align: center;
 }
 
-
-
 .menu-icon{
     width: 28px;
     margin-left: 20px;  
@@ -354,184 +352,8 @@ select:focus{
 }
 
 
-/*-----------------------single product details -----------------------*/
 
-.single-product{
-    margin-top: 80px;
-}
-.single-product .col-2 img{
-    padding:0;
-}
-.single-product .col-2{
-    padding:20px;
-}
-.single-product h4{
-    margin: 20px 0;
-    font-size: 22px;
-    font-weight: bold;
-}
-.single-product select{
-    display: block;
-    padding: 10px;
-    margin-top: 20px;
-}
-.single-product input{
-    width: 50px;
-    height: 40px;
-    padding-left: 10px;
-    font-size: 20px;
-    margin-right: 10px;
-    border: apx solid #ff523b;
-}
-input:focus{
-    outline: none;
-}
-.single-product .fa{
-    color:#ff523b;
-    margin-left: 10px;
-}
-.small-img-row{
-   display:flex;
-    justify-content: space-between;
-}
-.small-img-col{
-    flex-basis: 24%;
-    cursor: pointer;
-}
-
-
-
-
-/*------------------------------ cart items ------------------------------*/
-.cart-page{
-    margin: 80px auto;
-}
-
-table{
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.cart-info{
-    display:flex;
-    flex-wrap: wrap;
-}
-th{
-    text-align: left;
-    padding: 5px;
-    color: #fff;
-    background: #ff523b;
-    font-weight: normal;
-}
-td{
-    padding: 10px 5px;
-}
-
-td input{
-    width: 40px;
-    height: 30px;
-    padding: 5px;
-}
-td a{
-    color: #ff523b;
-}
-td img{
-    width: 80px;
-    height: 80px;
-    margin-right: 10px;
-}
-.total-price{
-    display: flex;
-    justify-content: flex-end;
-}
-.total-price table{
-    border-top: 3px solid #ff523b;
-    width: 100%;
-    max-width: 400px;
-}
-td:last-child{
-    text-align: right;
-}
-th:last-child{
-    text-align: right;
-}
-
-
-/*------------------------------ account-page ------------------------------*/
-.account-page{
-    padding: 50px 0;
-    background: radial-gradient(#fff, #ffd6d6);
-}
-.form-container{
-    background: #fff;
-    width:300px;
-    height: 400px;
-    position: relative;
-    text-align: center;
-    padding: 20px 0;
-    margin: auto;
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
-    overflow: hidden;
-}
-
-.form-container span{
-    font-weight: bold;
-    padding: 0 10px;
-    color: #555;
-    cursor: pointer;
-    width: 100px;
-    display: inline-block;
-}
-
-.form-btn{
-    display:inline-block;
-}
-.form-container form{
-    max-width: 300px;
-    padding: 0 20px;
-    position: absolute;
-    top: 130px;
-    transition: transform 1s;
-}
-
-form input{
-    width: 100%;
-    height: 30px;
-    margin: 10px 0;
-    padding: 0 10px;
-    border: 1px solid #ccc;
-}
-
-form .btn{
-    width: 100%;
-    border:none;
-    cursor:pointer;
-    margin:10px 0;
-}
-form .btn:focus{
-    outline: none;
-}
-
-#LoginForm{
-    left: -300px;
-}
-#RegForm{
-    left: 0;
-}
-form a{
-    font-size: 12px;
-}
-
-#Indicator{
-    width: 100px;
-    border: none;
-    background: #ff523b;
-    height: 3px;
-    margin-top: 8px;
-    transform: translateX(100px);
-    transition: transform 1s;
-}
-
+/*------------------- card car rental ----------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
 * {
     box-sizing: border-box;
@@ -665,6 +487,7 @@ a {
 .car_img_content {
     display: flex;
     justify-content: center;
+    /*aspect-ratio: 2.2/1;*/
 }
 
 .car_img_content img {
