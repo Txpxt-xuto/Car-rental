@@ -568,10 +568,10 @@ a {
 .main {
     background: #f8f9fa;
     display: grid;
-    height: 100vh;
+    height: 10vh;
     padding: 16px;
     place-items: center;
-    width: 100%;
+    width: 10%;
 }
 
 .container {
