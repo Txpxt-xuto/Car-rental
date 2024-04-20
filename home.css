@@ -853,3 +853,28 @@ a {
   }
   .marquee:before, .marquee:after { width: 5rem; }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------เงื่อนไขการให้เช่า-----------------------------------*/
+.Servicerentalrules
+{
+    background: radial-gradient(#54d690, #4ba6eb);
+    padding: 30px 0;
+}
+.Servicerentalrules h1
+{
+    margin: 25px 0;
+}
