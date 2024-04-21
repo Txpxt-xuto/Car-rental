@@ -28,6 +28,11 @@ nav ul li{
     margin-right: 50px;   
 }
 /*nav maenu on the right as a vertically list with 50px gapping with each without underline*/
+.menunavbar
+{
+    margin: 3rem;
+}
+
 a{
     text-decoration: none;
     color: #555;
