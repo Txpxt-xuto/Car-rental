@@ -214,8 +214,8 @@ small{
 
 /*-----------------------Footer -----------------------*/
 .footer{
-    background:#000; /*black;*/
-    color: #8a8a8a;
+    background:#5f5f5f37; /*black;*/
+    color: #3b3b3b;
     font-size: 14px;
     padding:60px 0 20px;
 }
@@ -225,7 +225,7 @@ small{
 }
 
 .footer h3{
-    color:#fff;
+    color:#000000;
     margin-bottom: 20px;
 }
 .footer-col-1, .footer-col-2,.footer-col-3,.footer-col-4{
@@ -376,7 +376,7 @@ a {
 }
 
 .main {
-    background: #f8f9fa;
+    background: #215c97;
     display: grid;
     height: 100vh;
     padding: 16px;
