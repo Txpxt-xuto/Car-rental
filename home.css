@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 body{
+    scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
 /*nav maenu on the left as a unordered list*/
@@ -147,7 +148,6 @@ h4{
 .col-4:hover{
     transform:translateY(-5px);
 }
-
 /*-----------------------offer -----------------------*/
 .offer{
     background: radial-gradient(#D1BB9E, #FFC470);
@@ -161,7 +161,6 @@ h4{
 small{
     color:#555;
 }
-
 /*-----------------------Testimonial -----------------------*/
 .testimonial{
     padding-top: 100px;
@@ -195,7 +194,6 @@ small{
     color: #555;
     font-size: 16px;
 }
-
 /*-----------------------Brands -----------------------*/
 .brands{
     margin: 100px auto;
@@ -211,11 +209,10 @@ small{
 .col-5 img:hover{
     filter: grayscale(0);
 }
-
 /*-----------------------Footer -----------------------*/
 .footer{
-    background:#000; /*black;*/
-    color: #8a8a8a;
+    background:#5f5f5f37; /*black;*/
+    color: #3b3b3b;
     font-size: 14px;
     padding:60px 0 20px;
 }
@@ -225,7 +222,7 @@ small{
 }
 
 .footer h3{
-    color:#fff;
+    color:#000000;
     margin-bottom: 20px;
 }
 .footer-col-1, .footer-col-2,.footer-col-3,.footer-col-4{
@@ -266,15 +263,11 @@ ul{
 .copyright{
     text-align: center;
 }
-
-
-
 .menu-icon{
     width: 28px;
     margin-left: 20px;  
     display:none;
 }
-
 /*-----------------------media query for menu -----------------------*/
 @media only screen and (max-width:800px){
     nav ul{
@@ -301,7 +294,6 @@ ul{
         cursor: pointer;
     }
 }
-
 /*-----------------------media query for less than 600 screen size(mobile device) -----------------------*/
 @media only screen and (max-width:600px){
     .row{
@@ -326,7 +318,6 @@ ul{
     
 
 }
-
 /*------------------- card car rental ----------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
 * {
@@ -342,15 +333,6 @@ body {
 a {
     color: inherit;
     text-decoration: none;
-}
-
-.main {
-    background: #f8f9fa;
-    display: grid;
-    height: 100vh;
-    padding: 16px;
-    place-items: center;
-    width: 100%;
 }
 
 .container {
@@ -572,7 +554,6 @@ a {
 .rentbtn:hover .text {
     color: #41B06E;
 }
-
 /*---------------------------------- FAQ -----------------------------------*/
 *,
 *:before,
@@ -595,7 +576,7 @@ a {
     margin-bottom: 2rem;
 }
 .wrapperfaq{
-    background-color: #6ec8d8;
+    background-color: #89a3fa;
     margin-bottom: 20px;
     padding: 15px 40px;
     border-radius: 5px;
@@ -628,140 +609,143 @@ a {
     overflow: hidden;
     transition: all 0.3s;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*--------------------------- infinite card slide show ---------------------------------*/
-.slide-containericss{
-    max-width: 1120px;
-    width: 100%;
-    padding: 40px 0;
-  }
-  .slide-contenticss{
-    margin: 0 40px;
-    overflow: hidden;
-    border-radius: 25px;
-  }
-  .cardicss{
-    border-radius: 25px;
-    background-color: #FFF;
-  }
-  .image-contenticss,
-  .card-contenticss{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 14px;
-  }
-  .image-contenticss{
-    position: relative;
-    row-gap: 5px;
-    padding: 15px 0px;
-  }
-  .overlayicss{
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #4070F4;
-    border-radius: 25px 25px 0 25px;
-  }
-  .overlayicss::before,
-  .overlayicss::after{
-    content: '';
-    position: absolute;
-    right: 0;
-    bottom: -40px;
-    height: 40px;
-    width: 40px;
-    background-color: #FFF;
-  }
-  .overlayicss::after{
-    background-color: #FFF;
-  }
-  .card-imageicss{
-    position: relative;
-    height: 150px;
-    width: 300px;
-    border-radius: 25px 25px 25px 25px;
-    padding: 0rem;
-  }
-  .card-imageicss .card-imgicss{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 25px 25px 0px 25px;
-  }
-  .name{
-    font-size: 18px;
-    font-weight: 500;
-    color: #333;
-  }
-  .description{
-    font-size: 14px;
-    color: #707070;
-    text-align: center;
-  }
-  .buttonicss{
+button {
+    padding: 0;
+    margin: 0;
     border: none;
-    font-size: 16px;
-    color: #FFF;
-    padding: 8px 16px;
-    background-color: #34b166;
-    border-radius: 6px;
-    margin: 14px;
+    background: none;
     cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  .buttonicss:hover{
-    background: #00a716;
   }
   
-  .swiper-navBtn{
-    color: #6E93f7;
-    transition: color 0.3s ease;
+  button {
+    --primary-color: #111;
+    --hovered-color: #3761ea;
+    position: relative;
+    display: flex;
+    font-weight: 600;
+    font-size: 20px;
+    gap: 0.5rem;
+    align-items: center;
   }
-  .swiper-navBtn:hover{
-    color: #4070F4;
+  
+  button p {
+    margin: 0;
+    position: relative;
+    font-size: 20px;
+    color: var(--primary-color);
   }
-  .swiper-navBtn::before,
-  .swiper-navBtn::after{
-    font-size: 35px;
-  }
-  .swiper-button-next{
-    right: 0;
-  }
-  .swiper-button-prev{
+  
+ .buttonHome:after {
+    position: absolute;
+    content: "";
+    width: 0;
     left: 0;
-  }
-  .swiper-pagination-bullet{
-    background-color: #6E93f7;
-    opacity: 1;
-  }
-  .swiper-pagination-bullet-active{
-    background-color: #4070F4;
+    bottom: -7px;
+    background: var(--hovered-color);
+    height: 2px;
+    transition: 0.3s ease-out;
   }
   
-  @media screen and (max-width: 768px) {
-    .slide-content{
-      margin: 0 10px;
-    }
-    .swiper-navBtn{
-      display: none;
-    }
+  .buttonHome p::before {
+    position: absolute;
+    /*   box-sizing: border-box; */
+    content: "Home";
+    width: 0%;
+    inset: 0;
+    color: var(--hovered-color);
+    overflow: hidden;
+    transition: 0.3s ease-out;
   }
   
+  button:hover::after {
+    width: 100%;
+  }
   
-
+  button:hover p::before {
+    width: 100%;
+  }
+  .buttonRentalCar:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background: var(--hovered-color);
+    height: 2px;
+    transition: 0.3s ease-out;
+  }
+  
+  .buttonRentalCar p::before {
+    position: absolute;
+    /*   box-sizing: border-box; */
+    content: "RentalCar";
+    width: 0%;
+    inset: 0;
+    color: var(--hovered-color);
+    overflow: hidden;
+    transition: 0.3s ease-out;
+  }
+  .buttonContect:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background: var(--hovered-color);
+    height: 2px;
+    transition: 0.3s ease-out;
+  }
+  
+  .buttonContect p::before {
+    position: absolute;
+    /*   box-sizing: border-box; */
+    content: "Contect";
+    width: 0%;
+    inset: 0;
+    color: var(--hovered-color);
+    overflow: hidden;
+    transition: 0.3s ease-out;
+  }
+  .buttonDocument:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background: var(--hovered-color);
+    height: 2px;
+    transition: 0.3s ease-out;
+  }
+  
+  .buttonDocument p::before {
+    position: absolute;
+    /*   box-sizing: border-box; */
+    content: "Document";
+    width: 0%;
+    inset: 0;
+    color: var(--hovered-color);
+    overflow: hidden;
+    transition: 0.3s ease-out;
+  }
+  .buttonAccount:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background: var(--hovered-color);
+    height: 2px;
+    transition: 0.3s ease-out;
+  }
+  
+  .buttonAccount p::before {
+    position: absolute;
+    /*   box-sizing: border-box; */
+    content: "Account";
+    width: 0%;
+    inset: 0;
+    color: var(--hovered-color);
+    overflow: hidden;
+    transition: 0.3s ease-out;
+  }
