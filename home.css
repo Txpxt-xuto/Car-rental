@@ -679,7 +679,7 @@ button {
   .buttonRentalCar p::before {
     position: absolute;
     /*   box-sizing: border-box; */
-    content: "RentalCar";
+    content: "Stock";
     width: 0%;
     inset: 0;
     color: var(--hovered-color);
