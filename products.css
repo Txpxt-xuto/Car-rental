@@ -393,6 +393,8 @@ a {
     display: grid;
     gap: 15px;
     grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 4rem;
+    margin-top: 4rem;
 }
 
 .card_ui {
