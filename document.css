@@ -5,6 +5,7 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
 }
 /*nav maenu on the left as a unordered list*/
 .navbar{
@@ -329,12 +330,42 @@ ul{
 /*--------------------------เงื่อนไขการให้เช่า-----------------------------------*/
 .Servicerentalrules
 {
-    background: radial-gradient(#54d690, #4ba6eb);
-    padding: 30px 0;
+    padding: 0rem 3rem;
+    margin: 5rem 5rem;
 }
-.Servicerentalrules h1
+.Servicerentalrules h3
 {
-    margin: 25px 0;
+    margin: 1rem 1rem;
+}
+.servicerentalrules
+{
+    margin: 1rem 2.5rem;
+}
+.Documentsusedforrentingservices 
+{
+    padding: 1rem 3rem;
+    margin: 0rem 5rem;
+    margin-bottom: 5rem;
+}
+.documentsusedforrentingservices h3
+{
+    margin: 1rem 1rem;
+}
+.exampledocumentsusedforrentingservices
+{
+    margin: 0rem 4rem;
+}
+.Exampledocumentsusedforrentingservices
+{
+    margin: 1rem 2.5rem;
+}
+.subdocumentsusedforrentingservices
+{
+    color: #000000;
+}
+.notedocumentsusedforrentingservices
+{
+    color: #ff0000;
 }
 
 
