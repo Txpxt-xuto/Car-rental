@@ -2,10 +2,10 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-
 from_addr='auto'
 to_addr=['nnrpwg10@gmail.com']
 msg=MIMEMultipart()
+
 msg['From']=from_addr
 msg['To']=" ,".join(to_addr)
 msg['subject']='just to check'
