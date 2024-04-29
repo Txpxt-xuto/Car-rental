@@ -8,13 +8,13 @@ msg=MIMEMultipart()
 
 msg['From']=from_addr
 msg['To']=" ,".join(to_addr)
-msg['subject']='just to check'
-""""""
-body='love u so much'
+msg['subject']='header'
+
+body='content'
 
 msg.attach(MIMEText(body,'plain'))
 
-email='toungsakul2@gmail.com'
+email='example@gmail.com'
 password='dhry quxy wcys ande'
 
 mail=smtplib.SMTP('smtp.gmail.com',587)
