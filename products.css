@@ -5,6 +5,7 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
 }
 /*nav maenu on the left as a unordered list*/
 .navbar{
@@ -376,7 +377,7 @@ a {
 }
 
 .main {
-    background: #215c97;
+    background: #477cb0;
     display: grid;
     height: 100vh;
     padding: 16px;
@@ -595,7 +596,7 @@ a {
 .rentbtn .text {
     color: white;
     font-weight: 700;
-    font-size: 1em;
+    font-size: 0.8em;
     transition: 400ms;
 }
 
