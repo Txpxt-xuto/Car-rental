@@ -9,7 +9,7 @@ msg=MIMEMultipart()
 msg['From']=from_addr
 msg['To']=" ,".join(to_addr)
 msg['subject']='just to check'
-
+""""""
 body='love u so much'
 
 msg.attach(MIMEText(body,'plain'))
