@@ -6,9 +6,8 @@
      #include <stdio.h>
      using namespace std;
      #define HELO "HELO 192.168.1.1\r\n"
-     #define DATA "DATA\r\n"
-     #define QUIT "QUIT\r\n"
-
+    #define DATA "DATA\r\n"
+    #define QUIT "QUIT\r\n"
     //#define h_addr h_addr_list[0]
     //FILE *fin;
     int sock;
@@ -21,57 +20,49 @@
     char *to_id="rameshgoli@example.com";
     char *sub="testmail\r\n";
     char wkstr[100]="hello how r u\r\n";
-
     /*=====Send a string to the socket=====*/
-
     void send_socket(char *s)
     {
         write(sock,s,strlen(s));
         write(1,s,strlen(s));
         //printf("Client:%s\n",s);
     }
-
     //=====Read a string from the socket=====*/
-
     void read_socket()
     {
         len = read(sock,buf,BUFSIZ);
         write(1,buf,len);
       //printf("Server:%s\n",buf);
     }
-
     /*=====MAIN=====*/
     int main(int argc, char* argv[])
     {
-
     /*=====Create Socket=====*/
     sock = socket(AF_INET, SOCK_STREAM, 0);
     if (sock==-1)
     {
-     perror("opening stream socket");
-     exit(1);
+        perror("opening stream socket");
+        exit(1);
     }
-    else
-      cout << "socket created\n";
+    else cout << "socket created\n";
+        
     /*=====Verify host=====*/
     server.sin_family = AF_INET;
     hp = gethostbyname(host_id);
     if (hp==(struct hostent *) 0)
     {
-     fprintf(stderr, "%s: unknown host\n", host_id);
-     exit(2);
+        fprintf(stderr, "%s: unknown host\n", host_id);
+        exit(2);
     }
-
     /*=====Connect to port 25 on remote host=====*/
     memcpy((char *) &server.sin_addr, (char *) hp->h_addr, hp->h_length);
     server.sin_port=htons(25); /* SMTP PORT */
     if (connect(sock, (struct sockaddr *) &server, sizeof server)==-1)
     {
-     perror("connecting stream socket");
-     exit(1);
+        perror("connecting stream socket");
+        exit(1);
     }
-    else
-      cout << "Connected\n";
+    else cout << "Connected\n";
     /*=====Write some data then read some =====*/
     read_socket(); /* SMTP Server logon string */
     send_socket(HELO); /* introduce ourselves */
@@ -101,4 +92,4 @@
     //=====Close socket and finish=====*/
     close(sock);
     exit(0);
-  }
+}
