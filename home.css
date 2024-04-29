@@ -6,6 +6,7 @@
 body{
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
 }
 /*nav maenu on the left as a unordered list*/
 .navbar{
