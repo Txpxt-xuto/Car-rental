@@ -1,11 +1,11 @@
 #include<iostream>
-     #include <sys/types.h>
-     #include <sys/socket.h>
-     #include <netinet/in.h>
-     #include <netdb.h>
-     #include <stdio.h>
-     using namespace std;
-     #define HELO "HELO 192.168.1.1\r\n"
+    #include <sys/types.h>
+    #include <sys/socket.h>
+    #include <netinet/in.h>
+    #include <netdb.h>
+    #include <stdio.h>
+    using namespace std;
+    #define HELO "HELO 192.168.1.1\r\n"
     #define DATA "DATA\r\n"
     #define QUIT "QUIT\r\n"
     //#define h_addr h_addr_list[0]
