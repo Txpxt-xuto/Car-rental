@@ -2,7 +2,7 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-from_addr='auto'
+from_addr='Sentfrom'
 to_addr=['Sendto@gmail.com']
 msg=MIMEMultipart()
 
