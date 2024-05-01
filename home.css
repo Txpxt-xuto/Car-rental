@@ -617,9 +617,9 @@ button {
     border: none;
     background: none;
     cursor: pointer;
-  }
-  
-  button {
+}
+
+button {
     --primary-color: #111;
     --hovered-color: #3761ea;
     position: relative;
@@ -628,16 +628,16 @@ button {
     font-size: 20px;
     gap: 0.5rem;
     align-items: center;
-  }
-  
-  button p {
+}
+
+button p {
     margin: 0;
     position: relative;
     font-size: 20px;
     color: var(--primary-color);
-  }
-  
- .buttonHome:after {
+}
+
+.buttonHome:after {
     position: absolute;
     content: "";
     width: 0;
