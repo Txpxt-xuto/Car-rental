@@ -709,8 +709,9 @@ button:hover p::before {
     color: var(--hovered-color);
     overflow: hidden;
     transition: 0.3s ease-out;
-  }
-  .buttonDocument:after {
+}
+
+.buttonDocument:after {
     position: absolute;
     content: "";
     width: 0;
@@ -730,8 +731,9 @@ button:hover p::before {
     color: var(--hovered-color);
     overflow: hidden;
     transition: 0.3s ease-out;
-  }
-  .buttonAccount:after {
+}
+
+.buttonAccount:after {
     position: absolute;
     content: "";
     width: 0;
@@ -740,9 +742,9 @@ button:hover p::before {
     background: var(--hovered-color);
     height: 2px;
     transition: 0.3s ease-out;
-  }
-  
-  .buttonAccount p::before {
+}
+
+.buttonAccount p::before {
     position: absolute;
     /*   box-sizing: border-box; */
     content: "Account";
