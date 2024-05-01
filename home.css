@@ -753,4 +753,4 @@ button:hover p::before {
     color: var(--hovered-color);
     overflow: hidden;
     transition: 0.3s ease-out;
-  }
+}
