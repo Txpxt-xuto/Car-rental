@@ -646,9 +646,9 @@ button p {
     background: var(--hovered-color);
     height: 2px;
     transition: 0.3s ease-out;
-  }
-  
-  .buttonHome p::before {
+}
+
+.buttonHome p::before {
     position: absolute;
     /*   box-sizing: border-box; */
     content: "Home";
@@ -657,16 +657,17 @@ button p {
     color: var(--hovered-color);
     overflow: hidden;
     transition: 0.3s ease-out;
-  }
-  
-  button:hover::after {
+}
+
+button:hover::after {
     width: 100%;
-  }
-  
-  button:hover p::before {
+}
+
+button:hover p::before {
     width: 100%;
-  }
-  .buttonRentalCar:after {
+}
+
+.buttonRentalCar:after {
     position: absolute;
     content: "";
     width: 0;
@@ -675,9 +676,9 @@ button p {
     background: var(--hovered-color);
     height: 2px;
     transition: 0.3s ease-out;
-  }
-  
-  .buttonRentalCar p::before {
+}
+
+.buttonRentalCar p::before {
     position: absolute;
     /*   box-sizing: border-box; */
     content: "Stock";
@@ -686,8 +687,9 @@ button p {
     color: var(--hovered-color);
     overflow: hidden;
     transition: 0.3s ease-out;
-  }
-  .buttonContect:after {
+}
+
+.buttonContect:after {
     position: absolute;
     content: "";
     width: 0;
@@ -696,9 +698,9 @@ button p {
     background: var(--hovered-color);
     height: 2px;
     transition: 0.3s ease-out;
-  }
-  
-  .buttonContect p::before {
+}
+
+.buttonContect p::before {
     position: absolute;
     /*   box-sizing: border-box; */
     content: "Contect";
@@ -717,9 +719,9 @@ button p {
     background: var(--hovered-color);
     height: 2px;
     transition: 0.3s ease-out;
-  }
-  
-  .buttonDocument p::before {
+}
+
+.buttonDocument p::before {
     position: absolute;
     /*   box-sizing: border-box; */
     content: "Document";
