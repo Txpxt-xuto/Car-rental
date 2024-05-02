@@ -27,6 +27,10 @@ h6{
     font-size:12px;
 }
 
+a{
+    color: #222;
+}
+
 p{
     font-size: 16px;
     color: #465b52;
@@ -63,12 +67,12 @@ body{
 }
 
 #navbar li{
-    padding: 0 20px;
     list-style: none;
+    padding: 0 20px;
     position: relative;
 }
 
-#navbar li{
+#navbar li a{
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
@@ -81,7 +85,8 @@ body{
     color: #4d4;
 }
 
-#navbar li a.active::after{
+#navbar li a.active::after,
+#navbar li a:hover::after{
     content: "";
     width: 30%;
     height: 2px;
@@ -89,4 +94,13 @@ body{
     position: absolute;
     bottom: -4px;
     left: 20px;
+}
+
+/*Home page*/
+#hero{
+    background-image: url("https://i.pinimg.com/564x/7f/ed/cd/7fedcdb48a2a7bca475c3576ca7c337d.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
 }
