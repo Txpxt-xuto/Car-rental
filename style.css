@@ -86,7 +86,7 @@ body{
 
 #navbar li a:hover,
 #navbar li a.active{
-    color: #4d4;
+    color: #4bce00;
 }
 
 #navbar li a.active::after,
@@ -94,7 +94,7 @@ body{
     content: "";
     width: 30%;
     height: 2px;
-    background: #4d4;
+    background: #4bce00;
     position: absolute;
     bottom: -4px;
     left: 20px;
@@ -155,3 +155,196 @@ body{
 #hero button:active {
     transform: scale(0.95);
 }
+
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feature .whyrotchoamahachai{
+    text-align: center;
+    padding: 25px 20px;
+    margin: 20px;
+    width: 100%;
+}
+
+#feature .whyrotchoamahachai span{
+    color: #4bce00;
+}
+
+#feature svg{
+    width: 100px;
+}
+
+#feature .fe-box{
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    padding: 25px 20px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.05);
+    border: 0px solid #d5d5d5;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.2);
+}
+
+#feature .fe-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #000000;
+}
+
+#feature .fe-box p{
+    color: #878787;
+}
+
+#feature .fe-box:nth-child(1) h6{
+    color: #000000;
+}
+
+#feature .fe-box:nth-child(2) h6{
+    color: #000000;
+}
+
+#feature .fe-box:nth-child(3) h6{
+    color: #000000;
+}
+
+#feature .fe-box:nth-child(4) h6{
+    color: #000000;
+}
+
+  #product1 {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EFEFEF;
+  }
+#product1 .slide-container{
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+  }
+  #product1 .slide-content{
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+  }
+  #product1 .card{
+    border-radius: 25px;
+    background-color: #FFF;
+  }
+  #product1 .image-content,
+  #product1 .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+  }
+  #product1 .image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+  }
+  #product1 .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #4070F4;
+    border-radius: 25px 25px 0 25px;
+  }
+  #product1 .overlay::before,
+  #product1 .overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #4070F4;
+  }
+  #product1 .overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #FFF;
+  }
+  #product1 .card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #FFF;
+    padding: 3px;
+  }
+  #product1 .card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #4070F4;
+  }
+  #product1 .name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+  }
+  #product1 .description{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+  }
+  #product1 .button{
+    border: none;
+    font-size: 16px;
+    color: #FFF;
+    padding: 8px 16px;
+    background-color: #4070F4;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  #product1 .button:hover{
+    background: #265DF2;
+  }
+  #product1 .swiper-navBtn{
+    color: #6E93f7;
+    transition: color 0.3s ease;
+  }
+  #product1 .swiper-navBtn:hover{
+    color: #4070F4;
+  }
+  #product1 .swiper-navBtn::before,
+  #product1 .swiper-navBtn::after{
+    font-size: 35px;
+  }
+  #product1 .swiper-button-next{
+    right: 0;
+  }
+  #product1 .swiper-button-prev{
+    left: 0;
+  }
+  #product1 .swiper-pagination-bullet{
+    background-color: #6E93f7;
+    opacity: 1;
+  }
+  #product1 .swiper-pagination-bullet-active{
+    background-color: #4070F4;
+  }
+  @media screen and (max-width: 768px) {
+    #product1 .slide-content{
+      margin: 0 10px;
+    }
+    #product1 .swiper-navBtn{
+      display: none;
+    }
+  }
