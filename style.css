@@ -103,4 +103,49 @@ body{
     width: 100%;
     background-size: cover;
     background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h4{
+    padding-bottom: 15px;
+}
+
+#hero h2{
+    color: rgb(255, 255, 255);
+}
+
+#hero button {
+    cursor: pointer;
+    font-weight: 700;
+    font-family: Helvetica,"sans-serif";
+    transition: all .2s;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background: #6fee25;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+#hero button:hover {
+    background: #6fee25;
+}
+
+#hero button > svg {
+    width: 34px;
+    margin-left: 10px;
+    transition: transform .3s ease-in-out;
+}
+
+#hero button:hover svg {
+    transform: translateX(5px);
+}
+
+#hero button:active {
+    transform: scale(0.95);
 }
