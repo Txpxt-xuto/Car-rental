@@ -4,86 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <img
-          onclick="document.body.classList.toggle('open')"
-          class="burger"
-          src="menu.svg"
-        />
-        <img src="github.svg" />
-        <div class="menu-items">
-          <div class="search">
-            <input value="Search or jump to..." />
-            <button>/</button>
-          </div>
-          <div class="menu menu-left">
-            <a href="#">Pulls</a>
-            <a href="#">Issues</a>
-            <a href="#">Explore</a>
-          </div>
+    <section id="header">
+        <a href="index.html"><img src="https://i.pinimg.com/474x/49/db/14/49db1404d7fdcd4baf48d920f706234d.jpg" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="Deal.html">Deal Contract</a></li>
+                <li><a href="Car.html">Car</a></li>
+                <li><a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="Account.html"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
         </div>
-        <div class="menu menu-right">
-          <span class="badge"></span>
-          <img src="bell.svg" />
-          <img src="plus.svg" />
-          <img src="avatar.png" />
-        </div>
-    </nav>
-
-
-
-    <footer>
-        <section class="top">
-            <img src="logo.svg" />
-            <div class="links">
-                <div class="links-column">
-                <h2>Menu</h2>
-                <a>Home</a>
-                <a>Stock</a>
-                <a>Deal contract</a>
-                <a></a>
-            </div>
-            <div class="links-column">
-                <h2>Resources</h2>
-                <a>GitHub</a>
-                <a>npm</a>
-                <a>Codepen</a>
-                <a>Codesandbox</a>
-                <a>Dribbble</a>
-            </div>
-            <div class="links-column socials-column">
-                <h2>Social Media</h2>
-                <p>
-                    สามารถทำการเช่ารถผ่านช่องทางแชท Fackbook และ Line ได้ที่ลิ้งค์ด้านล่าง
-                </p>
-                <div class="socials">
-                    <a href="https://www.facebook.com/profile.php?id=100089833762334" class="fa-brands fa-facebook" ></a>
-                    <a href="https://line.me/ti/p/0819424507" class="fa-brands fa-line"></a>
-                </div>
-            </div>
-        </section>
-        <section class="bottom">
-            <p class="copyright">© 2024 All rights reserved</p>
-            <div class="legal">
-                <a>ขอบคุณที่มาใช้บริการของเรา</a>
-            </div>
-        </section>
-    </footer>
+    
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
