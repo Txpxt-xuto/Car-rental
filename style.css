@@ -425,3 +425,47 @@ button.white{
   color: #000000;
 }
 
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .col{
+  display: flex;
+  flex-direction: column;
+  align-items:  flex-start;
+  margin-bottom: 20px;
+}
+
+footer .logo{
+  margin-bottom: 30px;
+}
+
+footer h4{
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+footer p{
+  margin: 0 0 8px 0;
+  font-size: 13px;
+  color: #6e6e6e;
+}
+
+footer a{
+  font-size: 13px;
+  text-decoration: none;
+  color: #222;
+  margin-bottom: 16px;
+}
+
+footer .follow{
+  margin-top: 20px;
+}
+
+footer .follow i{
+  padding-right: 4px;
+  color: #465b52;
+  cursor: pointer;
+}
