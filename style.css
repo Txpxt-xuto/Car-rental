@@ -49,6 +49,18 @@ body{
     width: 100%;
 }
 
+button.white{
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px 18px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
 /*Header start*/
 #header{
     display: flex;
@@ -220,14 +232,14 @@ body{
 #feature .fe-box:nth-child(4) h6{
     color: #000000;
 }
-
-  #product1 {
+/*----------------*/
+ /* #product1 {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #EFEFEF;
-  }
+  }*/
 #product1 .slide-container{
     max-width: 1120px;
     width: 100%;
@@ -348,3 +360,68 @@ body{
       display: none;
     }
   }
+  /*---------*/
+#sm-banner{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#sm-banner .banner-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 30px;
+}
+
+#sm-banner .b1{  
+  min-width:700px;
+  height: 50vh;
+  text-align: left;
+  align-items: flex-start;
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/61a734196514927.66225a60b9ca7.png");
+}
+
+#sm-banner .banner-box h2{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 800;
+}
+
+#sm-banner .banner-box span{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+
+#sm-banner .b2{
+  min-width:750px;
+  height: 50vh;
+  text-align: right;
+  align-items: flex-end;
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/170473193796051.65f1abd1c2a05.jpg");
+}
+
+#sm-banner .b2 h2{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 800;
+}
+
+#sm-banner .b2 span{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+
+#sm-banner .banner-box:hover  button{
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #000000;
+}
+
