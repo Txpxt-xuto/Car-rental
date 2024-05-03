@@ -1,9 +1,9 @@
-@import url('https://fonts.gooogleapis.com/css2?familySpartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
 *{ 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Spartan',sans-serif;
+    font-family: 'Kanit', sans-serif;
 }
 
 h1{
