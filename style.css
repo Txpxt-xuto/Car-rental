@@ -469,3 +469,16 @@ footer .follow i{
   color: #465b52;
   cursor: pointer;
 }
+
+footer .follow i:hover,
+footer a:hover{
+  color: #33fca5;
+}
+
+footer .install img{
+  margin: 10px 0 15px 0;
+}
+
+footer .install img{
+  margin: 10px 5px 15px 5px;
+}
