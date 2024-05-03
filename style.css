@@ -482,3 +482,8 @@ footer .install img{
 footer .install img{
   margin: 10px 5px 15px 5px;
 }
+
+footer .copyright {
+  width: 100%;
+  text-align: center;
+}
