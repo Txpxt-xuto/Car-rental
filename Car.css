@@ -592,6 +592,31 @@ footer .copyright {
   transition: 0.3s ease-out;
 }
 
+#pagination h2,
+#pagination p{
+  color: #fff;
+}
+
+#pagination{
+  margin-right: 5px;
+  text-align: center;
+}
+
+#pagination a{
+  text-decoration: none;
+  background-color: #26b585;
+  /*color: #ffba1e;*/
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 600;
+  padding: 15px 20px;
+}
+
+#pagination a i{
+  font-size: 16px;
+  font-weight: 600;
+}
+
 @media (max-width:799px){
   .section-p1{
     margin: 40px 40px;
