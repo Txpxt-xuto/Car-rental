@@ -156,14 +156,14 @@ footer p{
 }
 
 footer a{
-  font-size: 13px;
-  text-decoration: none;
-  color: #222;
-  margin-bottom: 16px;
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 16px;
 }
 
 footer .follow{
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 footer .follow i{
