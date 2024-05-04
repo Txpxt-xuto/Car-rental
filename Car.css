@@ -400,6 +400,11 @@ footer .copyright {
   overflow: hidden;
 }
 
+#product1 .car_price{
+  color: #222;
+  font-weight: 500;
+}
+
 #product1 .car_list_characteristics li span {
   color: #7f8388;
   overflow: hidden;
