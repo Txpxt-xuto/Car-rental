@@ -222,26 +222,41 @@ footer .copyright {
 
 }
 
-.small-img-group{
+#prodetails .small-img-group{
     display: flex;
     justify-content: space-between;
 }
 
-.small-img-col
+#prodetails .small-img-col
 {
     flex-basis: 24%;
     cursor: pointer;
 }
 
-.small-img-col img{
-    width: 400px;
+#prodetails .small-img-col img{
+    width: 190px;
 }
 
-.single-prodetails svg{
+#prodetails .single-prodetails svg{
     height: 20px;
     width: 20px;
     margin-right: 5px;
 }
+
+#prodetails .single-prodetails p{
+    color: #222;
+}
+
+#prodetails .car_price{
+    font-weight: 200;
+    color: #535252;
+} 
+#prodetails .car_price_time{
+    font-weight: 600;
+    color: #222;
+}
+
+
 
 @media (max-width:799px){
     .section-p1{
