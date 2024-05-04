@@ -167,53 +167,53 @@ footer .follow{
 }
 
 footer .follow i{
-  padding-right: 4px;
-  color: #465b52;
-  cursor: pointer;
+    padding-right: 4px;
+    color: #465b52;
+    cursor: pointer;
 }
 
 footer .follow i:hover,
 footer a:hover{
-  color: #22ad71;
+    color: #22ad71;
 }
 
 footer .install img{
-  margin: 10px 0 15px 0;
+    margin: 10px 0 15px 0;
 }
 
 footer .install img{
-  margin: 10px 5px 15px 5px;
+    margin: 10px 5px 15px 5px;
 }
 
 footer .copyright {
-  width: 100%;
-  text-align: center;
-  margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
 }
 
 #pagination h2,
 #pagination p{
-  color: #fff;
+    color: #fff;
 }
 
 #pagination{
-  margin-right: 5px;
-  text-align: center;
+    margin-right: 5px;
+    text-align: center;
 }
 
 #pagination a{
-  text-decoration: none;
-  background-color: #26b585;
-  /*color: #ffba1e;*/
-  color: #fff;
-  border-radius: 4px;
-  font-weight: 600;
-  padding: 15px 20px;
+    text-decoration: none;
+    background-color: #26b585;
+    /*color: #ffba1e;*/
+    color: #fff;
+    border-radius: 4px;
+    font-weight: 600;
+    padding: 15px 20px;
 }
 
 #pagination a i{
-  font-size: 16px;
-  font-weight: 600;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 #prodetails .single-proimg{
