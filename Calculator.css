@@ -59,7 +59,7 @@ button{
     color: #fff;
 }
 
-.btn-green{
+.btn-equal{
     background: green;
 }
 
@@ -67,6 +67,6 @@ button{
     background: rgba(224, 224, 224);
 }
 
-.btn-red{
+.btn-clear{
     background: red;
 }
