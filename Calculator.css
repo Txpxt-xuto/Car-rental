@@ -12,7 +12,7 @@ body{
     align-items: center;
 }
 
-.calculator{
+.Calculator{
     width: 300px;
     height: 500px;
     background: #22252D;
@@ -32,5 +32,41 @@ form input{
     background: #000;
     text-align: right;
     pointer-events: none;
-    
+}
+
+.buttons
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+button{
+    flex: 0 0 22%;
+    margin: 5px 0;
+    width: 60px;
+    font-weight: 600;
+    border: 1px solid #000;
+    font-size: 22px;
+    height: 52px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-yellow{
+    background: rgba(245, 146, 62);
+    color: #fff;
+}
+
+.btn-green{
+    background: green;
+}
+
+.btn-gray{
+    background: rgba(224, 224, 224);
+}
+
+.btn-red{
+    background: red;
 }
