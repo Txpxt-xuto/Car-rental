@@ -14,7 +14,7 @@
 
     equal.addEventListener('click',function(e){
         if(screen.value === ''){
-            screen.value = "";
+            screen.value = "Plase enter";
         }else{
             let answer = eval(screen.value);
             screen.value = answer;
