@@ -5,11 +5,11 @@
     let equal = document.querySelector('.btn-green');
     let clear = document.querySelector('.btn-red');
 
-    buttons.forEach()(function(button){
+    buttons.forEach(function(button){
         button.addEventListener('click',function(e){
             let value = e.target.dataset.num;
             screen.value += value;
-            
+
         })
     })
 
