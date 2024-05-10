@@ -483,7 +483,7 @@ button.white{
       &::after {
         cursor: pointer;
         color: #03d283;
-        border: 1px solid ;
+        border: 1px solid #03d283;
       }
     }
     .accordion-title {
