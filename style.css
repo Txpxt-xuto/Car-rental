@@ -437,19 +437,19 @@ button.white{
 
 
 
-#faq-section .faq-section {
+.faq-section {
   background: #fdfdfd;
   min-height: 100vh;
   padding: 10vh 0 0;
 }
-#faq-section .faq-title h2 {
+.faq-title h2 {
 position: relative;
 margin-bottom: 45px;
 display: inline-block;
 font-weight: 600;
 line-height: 1;
 }
-#faq-section .faq-title h2::before {
+.faq-title h2::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -459,24 +459,24 @@ line-height: 1;
   bottom: -25px;
   margin-left: -30px;
 }
-#faq-section .faq-title p {
+.faq-title p {
 padding: 0 190px;
 margin-bottom: 10px;
 }
 
-#faq-section .faq {
+.faq {
 background: #FFFFFF;
 box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
 border-radius: 4px;
 }
 
-#faq-section .faq .card {
+.faq .card {
 border: none;
 background: none;
 border-bottom: 1px dashed #CEE1F8;
 }
 
-#faq-section .faq .card .card-header {
+.faq .card .card-header {
 padding: 0px;
 border: none;
 background: none;
@@ -486,11 +486,11 @@ background: none;
 transition: all 0.3s ease 0s;
 }
 
-#faq-section .faq .card .card-header:hover {
+.faq .card .card-header:hover {
   background: rgba(233, 30, 99, 0.1);
   padding-left: 10px;
 }
-#faq-section .faq .card .card-header .faq-title {
+.faq .card .card-header .faq-title {
 width: 100%;
 text-align: left;
 padding: 0px;
@@ -510,7 +510,7 @@ padding-top: 20px;
 padding-bottom: 20px;
 }
 
-#faq-section .faq .card .card-header .faq-title .badge {
+.faq .card .card-header .faq-title .badge {
 display: inline-block;
 width: 20px;
 height: 20px;
@@ -526,7 +526,7 @@ font-size: 12px;
 margin-right: 20px;
 }
 
-#faq-section .faq .card .card-body {
+.faq .card .card-body {
 padding: 30px;
 padding-left: 35px;
 padding-bottom: 16px;
@@ -538,15 +538,15 @@ letter-spacing: 1px;
 border-top: 1px solid #F3F8FF;
 }
 
-#faq-section .faq .card .card-body p {
+.faq .card .card-body p {
 margin-bottom: 14px;
 }
 
 @media (max-width: 991px) {
-#faq-section .faq {
+.faq {
   margin-bottom: 30px;
 }
-#faq-section .faq .card .card-header .faq-title {
+.faq .card .card-header .faq-title {
   line-height: 26px;
   margin-top: 10px;
 }
