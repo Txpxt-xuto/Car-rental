@@ -470,13 +470,13 @@ box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
 border-radius: 4px;
 }
 
-.faq .card {
+#faq-section .faq .card {
 border: none;
 background: none;
 border-bottom: 1px dashed #CEE1F8;
 }
 
-.faq .card .card-header {
+#faq-section .faq .card .card-header {
 padding: 0px;
 border: none;
 background: none;
@@ -486,11 +486,11 @@ background: none;
 transition: all 0.3s ease 0s;
 }
 
-.faq .card .card-header:hover {
+#faq-section .faq .card .card-header:hover {
   background: rgba(233, 30, 99, 0.1);
   padding-left: 10px;
 }
-.faq .card .card-header .faq-title {
+#faq-section .faq .card .card-header .faq-title {
 width: 100%;
 text-align: left;
 padding: 0px;
@@ -510,7 +510,7 @@ padding-top: 20px;
 padding-bottom: 20px;
 }
 
-.faq .card .card-header .faq-title .badge {
+#faq-section .faq .card .card-header .faq-title .badge {
 display: inline-block;
 width: 20px;
 height: 20px;
@@ -526,7 +526,7 @@ font-size: 12px;
 margin-right: 20px;
 }
 
-.faq .card .card-body {
+#faq-section .faq .card .card-body {
 padding: 30px;
 padding-left: 35px;
 padding-bottom: 16px;
@@ -538,15 +538,15 @@ letter-spacing: 1px;
 border-top: 1px solid #F3F8FF;
 }
 
-.faq .card .card-body p {
+#faq-section .faq .card .card-body p {
 margin-bottom: 14px;
 }
 
 @media (max-width: 991px) {
-.faq {
+#faq-section .faq {
   margin-bottom: 30px;
 }
-.faq .card .card-header .faq-title {
+#faq-section .faq .card .card-header .faq-title {
   line-height: 26px;
   margin-top: 10px;
 }
