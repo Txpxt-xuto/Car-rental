@@ -434,8 +434,8 @@ button.white{
   border: 1px solid #fff;
   color: #000000;
 }
-/*
-#FAQ* {
+
+#FAQ * {
   box-sizing: border-box;
   &::before, &::after {
     box-sizing: border-box;
@@ -447,10 +447,10 @@ button.white{
   padding: 0;
   font-family: 'Hind', sans-serif;
   background: #fff;
-  color: #4d5974;
+  color: #222;
   display: flex;
   min-height: 100vh;
-}*/
+}
 
 .container {
   margin: 0 auto;
@@ -471,7 +471,7 @@ button.white{
     text-align: left;
     width: 100%;
     padding: 1em 0;
-    color: #7288a2;
+    color: #575757;
     font-size: 1.15rem;
     font-weight: 400;
     border: none;
@@ -521,7 +521,7 @@ button.white{
     }
   }
   button[aria-expanded='true'] {
-    color: #03b5d2;
+    color: #03d283;
     .icon {
       &::after {
         width: 0;
@@ -542,6 +542,7 @@ button.white{
     will-change: opacity, max-height;
     p {
       font-size: 1rem;
+      color: #222;
       font-weight: 300;
       margin: 2em 0;
     }
