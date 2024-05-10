@@ -459,12 +459,12 @@ line-height: 1;
   bottom: -25px;
   margin-left: -30px;
 }
-.faq-title p {
+#faq-section .faq-title p {
 padding: 0 190px;
 margin-bottom: 10px;
 }
 
-.faq {
+#faq-section .faq {
 background: #FFFFFF;
 box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
 border-radius: 4px;
