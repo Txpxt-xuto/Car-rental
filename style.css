@@ -435,7 +435,7 @@ button.white{
   color: #000000;
 }
 /*
-#FAQ * {
+#FAQ* {
   box-sizing: border-box;
   &::before, &::after {
     box-sizing: border-box;
@@ -452,7 +452,7 @@ button.white{
   min-height: 100vh;
 }*/
 
-#FAQ .container {
+.container {
   margin: 0 auto;
   padding: 4rem;
   width: 48rem;
@@ -462,7 +462,7 @@ button.white{
   .accordion-item {
     border-bottom: 1px solid #e5e5e5;
     button[aria-expanded='true'] {
-      border-bottom: 1px solid #03b5d2;
+      border-bottom: 1px solid #03d283;
     }
   }
   button {
@@ -479,11 +479,11 @@ button.white{
     outline: none;
     &:hover, &:focus {
       cursor: pointer;
-      color: #03b5d2;
+      color: #03d283;
       &::after {
         cursor: pointer;
-        color: #03b5d2;
-        border: 1px solid #03b5d2;
+        color: #03d283;
+        border: 1px solid ;
       }
     }
     .accordion-title {
