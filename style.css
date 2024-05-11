@@ -361,7 +361,7 @@ button.white{
   color: var(--light);
 }
 
-.list-size {
+#product1 .list-size {
   display: flex;
   align-items: center;
   gap: 0.25rem;
@@ -369,7 +369,7 @@ button.white{
   margin-top: 0.25rem;
 }
 
-.list-size .item-list {
+#product1 .list-size .item-list {
   list-style: none;
 }
 
