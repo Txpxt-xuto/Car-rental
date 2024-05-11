@@ -255,7 +255,7 @@ button.white{
   }
 }
 
-.slider {
+#product1 .slider {
   background: white;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
   height: 100px;
@@ -265,8 +265,8 @@ button.white{
   width: 960px;
 }
 
-.slider::before,
-.slider::after {
+#product1 .slider::before,
+#product1 .slider::after {
   background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
   height: 100px;
@@ -275,27 +275,40 @@ button.white{
   z-index: 2;
 }
 
-.slider::after {
+#product1 .slider::after {
   right: 0;
   top: 0;
   transform: rotateZ(180deg);
 }
 
-.slider::before {
+#product1 .slider::before {
   left: 0;
   top: 0;
 }
 
-.slider .slide-track {
+#product1 .slider .slide-track {
   animation: scroll 40s linear infinite;
   display: flex;
   width: calc(250px * 14);
 }
 
-.slider .slide {
+#product1 .slider .slide {
   height: 100px;
   width: 250px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*----------------------*/
 #sm-banner{
