@@ -373,7 +373,7 @@ button.white{
   list-style: none;
 }
 
-.list-size .item-list-button {
+#product1 .list-size .item-list-button {
   cursor: pointer;
 
   padding: 0.5rem;
