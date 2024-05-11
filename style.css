@@ -135,10 +135,13 @@ button.white{
     justify-content: center;
 }
 
+#hero a{
+  
+}
+
 #hero h4{
     padding-bottom: 15px;
     color: rgb(202, 201, 201);
-
 }
 
 #hero h2{
