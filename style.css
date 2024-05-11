@@ -584,6 +584,10 @@ footer p{
   color: #6e6e6e;
 }
 
+footer .icon a{
+  color: #cd0e0e;
+}
+
 footer a{
   font-size: 13px;
   text-decoration: none;
