@@ -566,7 +566,7 @@ footer .col{
 }
 
 footer .icon{
-  font-size: 25px;
+  font-size: 5px;
 }
 
 footer .logo{
@@ -582,10 +582,6 @@ footer p{
   margin: 0 0 8px 0;
   font-size: 13px;
   color: #6e6e6e;
-}
-
-footer .icon a{
-  color: #cd0e0e;
 }
 
 footer a{
