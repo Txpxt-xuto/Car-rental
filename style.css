@@ -257,19 +257,19 @@ button.white{
 
 #product1 .slider {
   background: white;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  /*box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);*/
   height: 500px;
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: 1000px;
+  width: 960px;
 }
 
 #product1 .slider::before,
 #product1 .slider::after {
   background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
-  height: 100px;
+  height: 500px;
   position: absolute;
   width: 200px;
   z-index: 2;
