@@ -343,7 +343,7 @@ button.white{
   fill: var(--light);
 }
 
-.title {
+#product1 .title {
   overflow: clip;
 
   width: 100%;
@@ -356,7 +356,7 @@ button.white{
   text-overflow: ellipsis;
 }
 
-.size {
+#product1 .size {
   font-size: 0.75rem;
   color: var(--light);
 }
