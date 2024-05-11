@@ -245,13 +245,7 @@ button.white{
     color: #000000;
 }
 /*-------------------------*/
-#product1 {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #EFEFEF;
-  }
+
 #product1 .slide-container{
     max-width: 1120px;
     width: 100%;
