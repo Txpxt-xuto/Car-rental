@@ -246,126 +246,57 @@ button.white{
 }
 /*-------------------------*/
 
-#product1 .slide-container{
-    max-width: 1120px;
-    width: 100%;
-    padding: 40px 0;
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
   }
-  #product1 .slide-content{
-    margin: 0 40px;
-    overflow: hidden;
-    border-radius: 25px;
+  100% {
+    transform: translateX(calc(-250px * 7));
   }
-  #product1 .card{
-    border-radius: 25px;
-    background-color: #FFF;
-  }
-  #product1 .image-content,
-  #product1 .card-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 14px;
-  }
-  #product1 .image-content{
-    position: relative;
-    row-gap: 5px;
-    padding: 25px 0;
-  }
-  #product1 .overlay{
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #4070F4;
-    border-radius: 25px 25px 0 25px;
-  }
-  #product1 .overlay::before,
-  #product1 .overlay::after{
-    content: '';
-    position: absolute;
-    right: 0;
-    bottom: -40px;
-    height: 40px;
-    width: 40px;
-    background-color: #4070F4;
-  }
-  #product1 .overlay::after{
-    border-radius: 0 25px 0 0;
-    background-color: #FFF;
-  }
-  #product1 .card-image{
-    position: relative;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    background: #FFF;
-    padding: 3px;
-  }
-  #product1 .card-image .card-img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid #4070F4;
-  }
-  #product1 .name{
-    font-size: 18px;
-    font-weight: 500;
-    color: #333;
-  }
-  #product1 .description{
-    font-size: 14px;
-    color: #707070;
-    text-align: center;
-  }
-  #product1 .button{
-    border: none;
-    font-size: 16px;
-    color: #FFF;
-    padding: 8px 16px;
-    background-color: #4070F4;
-    border-radius: 6px;
-    margin: 14px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  #product1 .button:hover{
-    background: #265DF2;
-  }
-  #product1 .swiper-navBtn{
-    color: #6E93f7;
-    transition: color 0.3s ease;
-  }
-  #product1 .swiper-navBtn:hover{
-    color: #4070F4;
-  }
-  #product1 .swiper-navBtn::before,
-  #product1 .swiper-navBtn::after{
-    font-size: 35px;
-  }
-  #product1 .swiper-button-next{
-    right: 0;
-  }
-  #product1 .swiper-button-prev{
-    left: 0;
-  }
-  #product1 .swiper-pagination-bullet{
-    background-color: #6E93f7;
-    opacity: 1;
-  }
-  #product1 .swiper-pagination-bullet-active{
-    background-color: #4070F4;
-  }
-  @media screen and (max-width: 768px) {
-    #product1 .slide-content{
-      margin: 0 10px;
-    }
-    #product1 .swiper-navBtn{
-      display: none;
-    }
-  }
+}
+
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 960px;
+}
+
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+
 /*----------------------*/
 #sm-banner{
   display: flex;
