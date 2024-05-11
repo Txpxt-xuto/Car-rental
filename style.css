@@ -388,10 +388,10 @@ button.white{
   transition: all 0.3s ease-in-out;
 }
 
-.item-list-button:hover {
+#product1 .item-list-button:hover {
   border: 2px solid var(--light);
 }
-.item-list-button:focus {
+#product1 .item-list-button:focus {
   background-color: var(--primary);
 
   border: 2px solid var(--primary-shadow);
