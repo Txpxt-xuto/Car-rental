@@ -258,7 +258,7 @@ button.white{
 #product1 .slider {
   background: white;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 100px;
+  height: 500px;
   margin: auto;
   overflow: hidden;
   position: relative;
@@ -399,19 +399,19 @@ button.white{
   box-shadow: inset 0px 1px 4px var(--primary-shadow);
 }
 
-.action {
+#product1 .action {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.price {
+#product1 .price {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--light);
 }
 
-.cart-button {
+#product1 .cart-button {
   cursor: pointer;
 
   display: flex;
@@ -433,7 +433,7 @@ button.white{
   box-shadow: inset 0 0 0.25rem 1px var(--light);
 }
 
-.cart-button .cart-icon {
+#product1 .cart-button .cart-icon {
   width: 1rem;
 }
 
