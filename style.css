@@ -565,8 +565,8 @@ footer .col{
   margin-bottom: 20px;
 }
 
-footer .icon{
-  font-size: 5px;
+footer .icon a{
+  font-size: 25px;
 }
 
 footer .logo{
