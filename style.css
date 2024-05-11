@@ -257,7 +257,6 @@ button.white{
 
 #product1 .slider {
   background: white;
-  /*box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);*/
   height: 500px;
   margin: auto;
   overflow: hidden;
@@ -287,7 +286,7 @@ button.white{
 }
 
 #product1 .slider .slide-track {
-  animation: scroll 40s linear infinite;
+  animation: scroll 10s linear infinite;
   display: flex;
   width: calc(250px * 14);
 }
