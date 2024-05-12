@@ -301,6 +301,19 @@ button.white{
   align-items: left;
   flex-direction: column;
 }
+#product1 .main {
+  background: #477cb0;
+  display: grid;
+  height: 100vh;
+  padding: 16px;
+  place-items: center;
+  width: 100%;
+}
+
+#product1 .container {
+  max-width: 1399px;
+  margin: auto;
+}
 
 #product1 .grid_cards {
   display: grid;
