@@ -310,10 +310,6 @@ button.white{
   width: 100%;
 }
 
-#product1 .car_name{
-  text-decoration:none;
-}
-
 #product1 .container {
   width: 1000px;
   margin: auto;
@@ -445,6 +441,11 @@ button.white{
 #product1 .car_price_container {
   flex-wrap: wrap;
   justify-content: space-between;
+  text-decoration:none;
+}
+
+#product1 .car_price_container a{
+  text-decoration:none;
 }
 
 #product1 .car_price {
