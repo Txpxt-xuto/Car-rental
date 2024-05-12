@@ -257,7 +257,7 @@ button.white{
 
 #product1 .slider {
   background: white;
-  height: 500px;
+  height: 1000px;
   margin: auto;
   overflow: hidden;
   position: relative;
@@ -311,7 +311,7 @@ button.white{
 }
 
 #product1 .container {
-  max-width: 1399px;
+  width: 1000px;
   margin: auto;
 }
 
@@ -333,17 +333,6 @@ button.white{
 #product1 .card_ui:hover {
   box-shadow: 0px 0px 30px rgb(0 0 0 / 10%);
   transform: translateY(-10px);
-}
-
-#product1 .car_header {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-}
-
-#product1 .car_header_status {
-  display: flex;
-  gap: 10px;
 }
 
 #product1 .status_rating {
