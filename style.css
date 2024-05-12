@@ -500,7 +500,6 @@ button.white{
   display: flex;
   justify-content: center;
   align-items: center;
-  text-decoration:none
   padding: 10px 15px;
   gap: 15px;
   background-color: #41B06E;
@@ -533,6 +532,10 @@ button.white{
   border: none;
   background: none;
   cursor: pointer;
+}
+
+#product1 .car_footer a{
+  text-decoration:none;
 }
 
 #product1 button {
