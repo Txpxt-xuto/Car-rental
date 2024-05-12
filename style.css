@@ -311,7 +311,7 @@ button.white{
 }
 
 #product1 .container {
-  size: 1000px;
+  max-width: 1200px;
   margin: auto;
 }
 
