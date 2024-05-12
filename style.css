@@ -311,7 +311,8 @@ button.white{
 }
 
 #product1 .container {
-  max-width: 1500px;
+  width: 1000px;
+  height: 400px;
   margin: auto;
 }
 
@@ -339,63 +340,6 @@ button.white{
   border: 2px solid #f1f1f1;
   border-radius: 10px;
   padding: 5px;
-}
-
-#product1 .status_rating_star {
-  color: #ffba1e;
-}
-
-#product1 .status_rating_number_comments {
-  color: #7f8388;
-}
-
-#product1 .status_disponibility {
-  border-radius: 10px;
-  padding: 5px 12px;
-}
-
-#product1 .status_available {
-  background: rgb(15 167 35 / 10%);
-}
-
-#product1 .status_not_available {
-  background: rgb(201 11 11 / 10%);
-}
-
-#product1 .status_available span {
-  color: #0fa723;
-}
-
-#product1 .status_not_available span,
-#product1 .button_like:hover i,
-#product1 .like_icon {
-  color: #c90b0b;
-}
-
-#product1 .button_like {
-  background: none;
-  border: none;
-  height: 32px;
-  width: 32px;
-}
-
-#product1 .button_like i {
-  font-size: 1.25rem;
-}
-
-#product1 .like_icon {
-  animation: animateHeart .5s ease;
-}
-
-@keyframes animateHeart {
-  0% {
-    transform: scale(1);
-  } 50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
 }
 
 #product1 .car_body_img_container {
