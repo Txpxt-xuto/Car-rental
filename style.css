@@ -257,7 +257,7 @@ button.white{
 
 #product1 .slider {
   background: white;
-  height: 1000px;
+  height: 600px;
   margin: auto;
   overflow: hidden;
   position: relative;
@@ -268,7 +268,7 @@ button.white{
 #product1 .slider::after {
   background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
-  height: 500px;
+  height: 600px;
   position: absolute;
   width: 200px;
   z-index: 2;
@@ -319,8 +319,8 @@ button.white{
   display: grid;
   gap: 15px;
   grid-template-columns: repeat(3, 1fr);
-  margin-bottom: 4rem;
-  margin-top: 4rem;
+  margin-bottom: 6rem;
+  margin-top: 2rem;
 }
 
 #product1 .card_ui {
