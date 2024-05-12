@@ -310,6 +310,10 @@ button.white{
   width: 100%;
 }
 
+#product1 .car_name{
+  text-decoration:none;
+}
+
 #product1 .container {
   width: 1000px;
   margin: auto;
