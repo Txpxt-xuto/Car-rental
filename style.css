@@ -368,34 +368,6 @@ button.white{
   margin-top: 0.25rem;
 }
 
-#product1 .list-size .item-list {
-  list-style: none;
-}
-
-#product1 .list-size .item-list-button {
-  cursor: pointer;
-
-  padding: 0.5rem;
-  background-color: var(--zinc-800);
-
-  font-size: 0.75rem;
-  color: var(--light);
-
-  border: 2px solid var(--zinc-800);
-  border-radius: 0.25rem;
-
-  transition: all 0.3s ease-in-out;
-}
-
-#product1 .item-list-button:hover {
-  border: 2px solid var(--light);
-}
-#product1 .item-list-button:focus {
-  background-color: var(--primary);
-  border: 2px solid var(--primary-shadow);
-  box-shadow: inset 0px 1px 4px var(--primary-shadow);
-}
-
 #product1 .action {
   display: flex;
   align-items: center;
