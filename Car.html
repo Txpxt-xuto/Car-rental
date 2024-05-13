@@ -1,39 +1,40 @@
 <!DOCTYPE html>
-<html>
-    
+<html lang="en">
 <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
-        <title>รถเช่าทั้งหมด</title>
-        <link rel="stylesheet" href="products.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="Car.css">
+    <link rel="stylesheet" href="swiper.min.css">
 </head>
 <body>
-        <div class ="header">
-            <div class="container">
-                <div class="navbar">
-                    <div class="logo">
-                        <a href="home.html"><img src="https://www.motiongraphicplus.com/wp-content/uploads/2023/09/open-ai-alpha-png.png" width="125px"></a>
-                    </div>
-                    <nav>
-                        <ul id="MenuItems">
-                            <li><a href="home.html"><button class="buttonHome"><p>Home</p></button></a></li>
-                            <li><a href="products.html"><button class="buttonRentalCar"><p>Stock</p></button></a></li>
-                            <li><a href="document.html"><button class="buttonDocument"><p>Document</p></button></a></li>
-                            <li><a href="#"><button class="buttonContect"><p>Contect</p></button></a></li>
-                            <li><a href="account.html"><button class="buttonAccount"><p>Account</p></button></a></li>
-                        </ul>
-                    </nav>
-                    <div class="cartnavbar"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></div>
-                    <div class="menunavbar"><i class="fa-solid fa-bars" class="menu-icon" onClick="menutoggle()"></i></div>
-                </div>
-            </div>
+    <section id="header">
+        <a href="index.html"><img src="https://www.motiongraphicplus.com/wp-content/uploads/2023/09/open-ai-alpha-png.png" width="125px" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Deal.html">Deal Contract</a></li>
+                <li><a class="active" href="Car.html">Car</a></li>
+                <li id="lg-acc"><a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li id="lg-bag"><a href="Account.html"><i class="fa-solid fa-user"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
         </div>
-        <!------------------------------ Products------------------------------>
+        <div id="mobile">
+            <a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="Account.html"><i class="fa-solid fa-user"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="page-hero">
+        <h4>เรื่องรถไว้ใจ</h4>
+        <h2>รถเช่ามหาชัย</h2>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>รถเช่า</h2>
         <div class="container">
             <section class="grid_cards">
                 <article class="card_ui">
@@ -51,7 +52,7 @@
                     </div>
                     <div class="car_body">
                         <div class="car_body_img_container">
-                            <a href="https://fontawesome.com/icons/person?f=classic&s=solid" class="car_img_content_link">
+                            <a href="#" class="car_img_content_link">
                                 <figure class="car_img_content">
                                     <img src="https://i.pinimg.com/564x/e6/ac/8a/e6ac8ac893b03f934695566dc05d3c76.jpg" alt="Ford Focus">
                                 </figure>
@@ -60,7 +61,7 @@
                         <div>
                             <p class="car_name">Toyota</p>
                             <div class="car_price_container">
-                                <a href="https://fontawesome.com/icons/person?f=classic&s=solid" class="car_model_link">
+                                <a href="#" class="car_model_link">
                                     <h2 class="car_model" title="FOCUS">Innova</h2>
                                 </a>
                                 <p class="car_price">2000฿ <span class="car_price_time">/day</span></p>
@@ -82,7 +83,7 @@
                                 <span title="5">7</span>
                             </li>
                             <li>
-                                <a href="https://fontawesome.com/icons/person?f=classic&s=solid">
+                                <a href="#">
                                     <button class="rentbtn">
                                         <p class="text">Go to book</p>
                                     </button>
@@ -161,16 +162,16 @@
                     </div>
                     <div class="car_body">
                         <div class="car_body_img_container">
-                            <a href="#" class="car_img_content_link">
+                            <a href="product.html" class="car_img_content_link">
                                 <figure class="car_img_content">
-                                    <img src="https://i.pinimg.com/564x/e6/ac/8a/e6ac8ac893b03f934695566dc05d3c76.jpg" alt="Ford Focus">
+                                    <img src="https://www.suzuki.co.th/upload/content/20201103_s_S22NaeAylP.png" alt="Ford Focus">
                                 </figure>
                             </a>
                         </div>
                         <div>
                             <p class="car_name">Toyota</p>
                             <div class="car_price_container">
-                                <a href="#" class="car_model_link">
+                                <a href="product.html" class="car_model_link">
                                     <h2 class="car_model" title="FOCUS">Innova</h2>
                                 </a>
                                 <p class="car_price">2000฿ <span class="car_price_time">/day</span></p>
@@ -192,7 +193,7 @@
                                 <span title="5">7</span>
                             </li>
                             <li>
-                                <a href="#products-details.html">
+                                <a href="product.html">
                                     <button class="rentbtn">
                                         <p class="text">Go to book</p>
                                     </button>
@@ -313,25 +314,67 @@
                 </article>
             </section>
         </div>
-        <!----------------------------------footer------------------------------------->
-        <div class ="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col-2">
-                    <img src="https://www.motiongraphicplus.com/wp-content/uploads/2023/09/open-ai-alpha-png.png">
-                    <p>Thank you for coming to use our service.</p>
-                </div>
-                <div class="footer-col-4">
-                    <h3>Follow us</h3>
-                    <ul>
-                        <li><a href="https://www.facebook.com/profile.php?id=100089833762334">Facebook</a></li>
-                        <li>081-9424507 (คุณแก้ว)</li>
-                        <li>098-2625255 (คุณโต้)</li>
-                    </ul>
+    </section>
+
+    <section id="pagination" class="section-p1">
+        <a href="">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href=""><i class="fa-solid fa-ellipsis"></i></a>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img src="https://www.motiongraphicplus.com/wp-content/uploads/2023/09/open-ai-alpha-png.png" width="125px" class="logo" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address : </strong>35/93  ซอยสิวารัตน์ 1  ถนนบ้านปลายครองครุ  ม.4  ต.นาดี  อ.เมือง  จ.สมุทรสาคร  74000</p>
+            <p><strong>Phone : </strong>081-9424507 (คุณแก้ว)</p>
+            <p>098-2625255 (คุณโต้)</p>
+            <p><strong>Open : </strong> 06.00 - 18.00 Everyday</p>
+            <div class="follow">
+                <h4>ติดตามเรา</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-line"></i>
                 </div>
             </div>
         </div>
+        <div class="col">
+            <h4>เกี่ยวกับ รถเช่ามหาชัย</h4>
+            <a href="index.html">Home</a>
+            <a href="Deal.html">Deal Contract</a>
+            <a href="Car.html">Car</a>
+            <a href="Cart.html">Cart</a>
+            <a href="Account.html">Account</a>
         </div>
-    <script src="products.js"></script>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="index.html">Sign up</a>
+            <a href="Deal.html">Log in</a>
+            <h4>ความช่วยเหลือ</h4>
+            <a href="Account.html">วิธีการจอง</a>
+            <a href="Account.html">คำถามที่พบบ่อย</a>
+            <a href="Account.html">เงื่อนไขการใช้บริการ</a>
+            <a href="Account.html">ความช่วยเหลือเพิ่มเติม</a>
+        </div>
+        <div class="col install">
+            <h4>Payment Gateway</h4>
+            <p>Secured Payment Gateway</p>
+            <div src="">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/1200px-MasterCard_Logo.svg.png" width="50px" alt="">
+                <img src="https://1000logos.net/wp-content/uploads/2021/11/VISA-logo.png" width="60px" alt="">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/JCB_logo.svg/2560px-JCB_logo.svg.png" width="40px" alt="">
+                <img src="https://w7.pngwing.com/pngs/604/48/png-transparent-citibank-logo-credit-card-insurance-score-blue-text-trademark.png" width="60px" alt="">
+                <img src="https://newsroom.paypal-corp.com/image/pp_h_rgb_logo_tn.jpg" width="50px" alt="">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/PromptPay-logo.png" width="50px" alt="">
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © by Tapat Toungsakul 2024 </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="swiper.min.js"></script>
 </body>
 </html>
