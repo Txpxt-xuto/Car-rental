@@ -1,0 +1,39 @@
+.Servicerentalrules
+{
+    padding: 0rem 3rem;
+    margin: 5rem 5rem;
+}
+.Servicerentalrules h3
+{
+    margin: 1rem 1rem;
+}
+.servicerentalrules
+{
+    margin: 1rem 2.5rem;
+}
+.Documentsusedforrentingservices 
+{
+    padding: 1rem 3rem;
+    margin: 0rem 5rem;
+    margin-bottom: 5rem;
+}
+.documentsusedforrentingservices h3
+{
+    margin: 1rem 1rem;
+}
+.exampledocumentsusedforrentingservices
+{
+    margin: 0rem 4rem;
+}
+.Exampledocumentsusedforrentingservices
+{
+    margin: 1rem 2.5rem;
+}
+.subdocumentsusedforrentingservices
+{
+    color: #000000;
+}
+.notedocumentsusedforrentingservices
+{
+    color: #ff0000;
+}
