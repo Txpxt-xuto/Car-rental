@@ -255,6 +255,11 @@ button.white{
   }
 }
 
+#product1 .Hit{
+  justify-content: center;
+  align-items: center;
+}
+
 #product1 .slider {
   background: white;
   height: 600px;
