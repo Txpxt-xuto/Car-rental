@@ -328,7 +328,7 @@ button.white{
   margin-top: 2rem;
 }
 
-.card {
+#product1 .card {
   max-width: 300px;
   border-radius: 0.5rem;
   background-color: #fff;
@@ -336,36 +336,36 @@ button.white{
   border: 1px solid transparent;
 }
 
-.card a {
+#product1 .card a {
   text-decoration: none
 }
 
-.content {
+#product1 .content {
   padding: 1.1rem;
 }
 
-.image {
+#product1 .image {
   object-fit: cover;
   width: 100%;
   height: 150px;
   background-color: rgb(239, 205, 255);
 }
 
-.title {
+#product1 .title {
   color: #111827;
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 600;
 }
 
-.desc {
+#product1 .desc {
   margin-top: 0.5rem;
   color: #6B7280;
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
 
-.action {
+#product1 .action {
   display: inline-flex;
   margin-top: 1rem;
   color: #ffffff;
