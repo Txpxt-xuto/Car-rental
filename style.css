@@ -379,11 +379,11 @@ button.white{
   border-radius: 4px;
 }
 
-.action span {
+#product1 .action span {
   transition: .3s ease;
 }
 
-.action:hover span {
+#product1 .action:hover span {
   transform: translateX(4px);
 }
 
