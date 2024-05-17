@@ -321,9 +321,9 @@ button.white{
 
 #product1 .grid_cards {
   display: grid;
-  gap: 50px;
   grid-template-columns: repeat(3, 1fr);
   margin-bottom: 6rem;
+  margin-left: 6rem;
   margin-top: 2rem;
 }
 
