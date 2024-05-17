@@ -256,8 +256,7 @@ button.white{
 }
 
 #product1 .Hit{
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
 #product1 .slider {
