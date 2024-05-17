@@ -290,7 +290,7 @@ button.white{
 }
 
 #product1 .slider .slide-track {
-  animation: scroll 40s linear infinite;
+  animation: scroll 10s linear infinite;
   display: flex;
   width: calc(250px * 14);
 }
@@ -321,7 +321,7 @@ button.white{
 
 #product1 .grid_cards {
   display: grid;
-  gap: 15px;
+  gap: 50px;
   grid-template-columns: repeat(3, 1fr);
   margin-bottom: 6rem;
   margin-top: 2rem;
