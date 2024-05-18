@@ -251,7 +251,6 @@ button.white{
 }
 
 #product1 .pdf {
-  justify-content: space-around;
   width: 60%;
   aspect-ratio: 4 / 3;
 }
@@ -262,6 +261,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  justify-content: center;
 }
 
 
