@@ -251,7 +251,8 @@ button.white{
 }
 
 #product1 .pdf {
-  width:60%;
+  justify-content: center;
+  width: 60%;
   aspect-ratio: 4 / 3;
 }
 
