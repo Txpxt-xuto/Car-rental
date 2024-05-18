@@ -1,0 +1,40 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+$(document).ready(function() {
+    // start: Sidebar
+    $('.sidebar-dropdown-menu').slideUp('fast')
+
+    $('.sidebar-menu-item.has-dropdown > a, .sidebar-dropdown-menu-item.has-dropdown > a').click(function(e) {
+        e.preventDefault()
+
+        if(!($(this).parent().hasClass('focused'))) {
+            $(this).parent().parent().find('.sidebar-dropdown-menu').slideUp('fast')
+            $(this).parent().parent().find('.has-dropdown').removeClass('focused')
+        }
+
+        $(this).next().slideToggle('fast')
+        $(this).parent().toggleClass('focused')
+    })
+
+    $('.sidebar-toggle').click(function() {
+        $('.sidebar').toggleClass('collapsed')
+
+        $('.sidebar.collapsed').mouseleave(function() {
+            $('.sidebar-dropdown-menu').slideUp('fast')
+            $('.sidebar-menu-item.has-dropdown, .sidebar-dropdown-menu-item.has-dropdown').removeClass('focused')
+        })
+    })
+
+    $('.sidebar-overlay').click(function() {
+        $('.sidebar').addClass('collapsed')
+
+        $('.sidebar-dropdown-menu').slideUp('fast')
+        $('.sidebar-menu-item.has-dropdown, .sidebar-dropdown-menu-item.has-dropdown').removeClass('focused')
+    })
+
+    if(window.innerWidth < 768) {
+        $('.sidebar').addClass('collapsed')
+    }
+})
+</script>
