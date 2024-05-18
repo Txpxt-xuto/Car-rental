@@ -251,8 +251,8 @@ button.white{
 }
 
 #product1 .pdf {
-  width: 100%;
-  aspect-ratio: 2 / 1;
+  width:70%;
+  aspect-ratio: 4 / 3;
 }
 
 #product1 .pdf,
