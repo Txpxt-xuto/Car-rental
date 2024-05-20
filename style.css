@@ -257,6 +257,7 @@ button.white{
 #product1 .pdf,
 html,
 body {
+  text-align: center;
   height: 100%;
   margin: 0;
   padding: 0;
