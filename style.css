@@ -245,13 +245,13 @@ button.white{
     color: #000000;
 }
 /*-------------------------*/
-
+/*
 #product1 h2{
   text-align: center;
 }
 
 #product1 .pdf {
-  width: 60%;
+  width: 100%;
   aspect-ratio: 4 / 3;
 }
 
@@ -263,7 +263,7 @@ body {
   padding: 0;
   justify-content: center;
 }
-
+*/
 
 /*----------------------*/
 #sm-banner{
