@@ -260,11 +260,10 @@ body {
   text-align: center;
   height: 100%;
   margin-top: 20px;
+  margin-bottom: 20px;
   padding: 0;
   justify-content: center;
 }
-
-
 /*----------------------*/
 #sm-banner{
   display: flex;
