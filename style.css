@@ -258,7 +258,7 @@ button.white{
 html,
 body {
   height: 100%;
-  margin-left: 200px;
+  margin: 0;
   padding: 0;
   justify-content: center;
 }
