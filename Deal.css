@@ -223,8 +223,10 @@ footer .copyright {
     aspect-ratio: 4 / 3;
 }
 
-.pdf
- {
+.pdf,
+html,
+body
+{
     text-align: center;
     height: 100%;
     margin-top: 20px;
