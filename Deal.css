@@ -218,12 +218,12 @@ footer .copyright {
     margin-top: 50px;
 }
 
-#product1 .pdf {
+#RentalRulesandDocument .pdf {
     width: 60%;
     aspect-ratio: 4 / 3;
-  }
+}
 
-  #product1 .pdf,
+#RentalRulesandDocument .pdf,
 html,
 body {
     text-align: center;
