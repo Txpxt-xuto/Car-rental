@@ -221,6 +221,7 @@ footer .copyright {
 .pdf {
     width: 50%;
     aspect-ratio: 4 / 3;
+    margin-left: 500px;
 }
 
 .pdf,
