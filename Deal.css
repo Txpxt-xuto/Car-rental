@@ -219,6 +219,8 @@ footer .copyright {
 }
 
 #pdf {
+    width: "50%" ;
+    height: "700px" ;
     display: flex;
     justify-content: center;
     align-items: center;
