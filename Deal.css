@@ -218,17 +218,12 @@ footer .copyright {
     margin-top: 50px;
 }
 
-.pdf {
-    width: 60%;
+#pdf {
+    display: grid;
+    place-items: center;
+    width:"50%" ;
+    height: "100%" ;
     aspect-ratio: 4 / 3;
-}
-
-.pdf
-{
-    text-align: center;
-    height: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: auto;
     padding: 0;
-    justify-content: center;
 }
