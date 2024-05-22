@@ -219,11 +219,9 @@ footer .copyright {
 }
 
 #pdf {
-    display: grid;
-    place-items: center;
-    width:"50%" ;
-    height: "100%" ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     aspect-ratio: 4 / 3;
-    margin: auto;
     padding: 0;
 }
