@@ -228,7 +228,9 @@ footer .copyright {
     height: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
-    
-    text-align: center;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    place-items: center;
 }
