@@ -220,12 +220,8 @@ footer .copyright {
 
 .pdf {
     width: 50%;
+    height: 100%;
     aspect-ratio: 4 / 3;
-}
-
-.pdf
-{
-    height: 10%;
     margin: auto;
     padding: 0;
 }
