@@ -219,14 +219,12 @@ footer .copyright {
 }
 
 .pdf {
-    width: 100%;
-    aspect-ratio: 4 / 3;
+    width: 50%;
+    margin-left: 500px;
 }
 
 .pdf,
 html,
 body {
     height: 100%;
-    margin: 0;
-    padding: 0;
 }
