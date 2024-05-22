@@ -218,7 +218,7 @@ footer .copyright {
     margin-top: 50px;
 }
 
-#pdf,
+.pdf,
 html,
 body {
     height: 100%;
@@ -228,5 +228,5 @@ body {
 
 .pdf {
     width: 100%;
-    aspect-ratio: 4 / 3;
+    
 }
