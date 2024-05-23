@@ -218,11 +218,11 @@ footer .copyright {
     margin-top: 50px;
 }
 
-ruby
-{
+.Rule{
     width: 100%;
     text-align: center;
 }
+
 .pdf {
     width: 50%;
     margin-left: 450px;
