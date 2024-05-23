@@ -218,14 +218,13 @@ footer .copyright {
     margin-top: 50px;
 }
 
-#Rule .pdf {
+.pdf {
     width: 50%;
     margin-left: 450px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
-
-#Rule .pdf,
+.pdf,
 html,
 body {
     height: 100%;
