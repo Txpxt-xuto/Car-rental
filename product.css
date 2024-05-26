@@ -258,8 +258,8 @@ footer .copyright {
 
 #prodetails .rentbtn {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     padding: 10px 15px;
     gap: 15px;
     background-color: #41B06E;
