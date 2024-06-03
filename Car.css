@@ -597,12 +597,12 @@ footer .copyright {
   transition: 0.3s ease-out;
 }
 
-#product1 .container {
+#product1 .containerinsidecar {
   position: relative;
   width: 50%;
 }
 
-#product1 .image {
+#product1 .imagecar {
   opacity: 1;
   display: block;
   width: 100%;
@@ -611,7 +611,7 @@ footer .copyright {
   backface-visibility: hidden;
 }
 
-#product1 .middle {
+#product1 .imagecar {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
@@ -621,11 +621,11 @@ footer .copyright {
   -ms-transform: translate(-50%, -50%)
 }
 
-#product1 .container:hover .image {
+#product1 .container:hover .imagecar {
   opacity: 0.3;
 }
 
-#product1 .container:hover .middle {
+#product1 .container:hover .imagecar {
   opacity: 1;
 }
 
