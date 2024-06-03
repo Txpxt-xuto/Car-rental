@@ -597,12 +597,12 @@ footer .copyright {
   transition: 0.3s ease-out;
 }
 
-.container {
+#product1 .container {
   position: relative;
   width: 50%;
 }
 
-.image {
+#product1 .image {
   opacity: 1;
   display: block;
   width: 100%;
@@ -611,7 +611,7 @@ footer .copyright {
   backface-visibility: hidden;
 }
 
-.middle {
+#product1 .middle {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
@@ -621,15 +621,15 @@ footer .copyright {
   -ms-transform: translate(-50%, -50%)
 }
 
-.container:hover .image {
+#product1 .container:hover .image {
   opacity: 0.3;
 }
 
-.container:hover .middle {
+#product1 .container:hover .middle {
   opacity: 1;
 }
 
-.text {
+#product1 .text {
   background-color: #4CAF50;
   color: white;
   font-size: 16px;
