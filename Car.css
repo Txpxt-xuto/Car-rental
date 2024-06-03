@@ -597,46 +597,6 @@ footer .copyright {
   transition: 0.3s ease-out;
 }
 
-#product1 .containerinsidecar {
-  position: relative;
-  width: 50%;
-}
-
-#product1 .imagecar {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-
-#product1 .imagecar {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
-}
-
-#product1 .container:hover .imagecar {
-  opacity: 0.3;
-}
-
-#product1 .container:hover .imagecar {
-  opacity: 1;
-}
-
-#product1 .text {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-}
-
-
 #pagination h2,
 #pagination p{
   color: #fff;
