@@ -201,6 +201,10 @@ footer .copyright {
     text-align: center;
 }
 
+#car_price{
+    font-weight: 600;
+}
+
 #pagination a{
     text-decoration: none;
     background-color: #26b585;
