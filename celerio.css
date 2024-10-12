@@ -218,12 +218,13 @@ footer .copyright {
 
 #prodetails {
     display: flex;
-    margin: 20px;
+    margin-top: 20px;
 }
 
 #prodetails .single-proimg{
     width: 40%;
     margin-right: 50px;
+    height: 50%;
 }
 
 #prodetails .small-img-group{
