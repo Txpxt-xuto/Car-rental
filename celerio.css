@@ -216,10 +216,14 @@ footer .copyright {
     font-weight: 600;
 }
 
+#prodetails {
+    display: flex;
+    margin: 20px;
+}
+
 #prodetails .single-proimg{
     width: 40%;
     margin-right: 50px;
-
 }
 
 #prodetails .small-img-group{
