@@ -216,10 +216,15 @@ footer .copyright {
     font-weight: 600;
 }
 
+#prodetails {
+    display: flex;
+    margin-top: 20px;
+}
+
 #prodetails .single-proimg{
     width: 40%;
     margin-right: 50px;
-
+    height: 50%;
 }
 
 #prodetails .small-img-group{
@@ -294,7 +299,6 @@ footer .copyright {
     background: none;
     cursor: pointer;
 }
-
 
 @media (max-width:799px){
     .section-p1{
