@@ -1,173 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="swiper.min.css">
+  
+  <!--====== Design by foolishdeveloper.com =====-->
+  
+  
+    <title>Automatic Popup</title>
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!--Stylesheets-->
+    <style media="screen">
+    	*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0855ae;
+}
+.popup{
+    background-color: #ffffff;
+    width: 420px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none; 
+    text-align: center;
+}
+.popup button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #ffffff;
+		background: #03549a;
+		border-radius: 100%;
+		width: 40px;
+		height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.popup h2{
+	margin-top: -20px;
+}
+.popup p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+}
+a{
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #0f72e5;
+		border-radius: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 0;
+}
+    </style>
 </head>
 <body>
-    <section id="header">
-        <a href="index.html"><img src="https://img2.pic.in.th/pic/22970b258ea55b6a22e0f79b09d03ef7.png" width="125px" class="logo" alt=""></a>
-        <div>
-            <ul id="navbar">
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="Deal.html">Deal Contract</a></li>
-                <li><a href="Car.html">Car</a></li>
-                <!--<li id="lg-acc"><a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li id="lg-bag"><a href="Account.html"><i class="fa-solid fa-user"></i></a></li>-->
-                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
-            </ul>
-        </div>
-        <div id="mobile">
-            <!--<a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-            <a href="Account.html"><i class="fa-solid fa-user"></i></a>-->
-            <i id="bar" class="fas fa-outdent"></i>
-        </div>
-    </section>
+    <div class="popup">
+        <button id="close">&times;</button>
+        <h2>Automatic Pop-Up</h2>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita distinctio fugiat alias iure qui, commodi minima magni ullam aliquam dignissimos?
+        </p>
+        <a href="#">Let's Go</a>
+    </div>
+    <!--Script-->
+    <script type="text/javascript">
+window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
+            document.querySelector(".popup").style.display = "block";
+        },
+        2000 
+    )
+});
 
-    <section id="hero">
-        <h4>กำลังมองหารถเช่าอยู่ใช่ไหม</h4>
-        <h2>รถเช่ามหาชัยมีคำตอบ</h2>
-        <p>เลือกก่อน จองก่อน ได้รถก่อน</p>
-        <a href="Car.html">
-            <button>
-                <span>เลือกรถตอนนี้</span>
-                <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
-                    <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="black"></path>
-                </svg>
-            </button>
-        </a>
-    </section>
 
-    <section id="feature" class="section-p1">
-        <div class="whyrotchoamahachai">
-            <h2>ทำไมต้อง<br><span>รถเช่ามหาชัย</span></h2>
-        </div>
-        <div class="fe-box">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
-            <h6>อนุมัติง่าย</h6>
-            <p>เช่าในนามบุคคุลหรือองค์กรก็ได้</p>
-        </div>
-        <div class="fe-box">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M18.18 8.03933L18.6435 7.57589C19.4113 6.80804 20.6563 6.80804 21.4241 7.57589C22.192 8.34374 22.192 9.58868 21.4241 10.3565L20.9607 10.82M18.18 8.03933C18.18 8.03933 18.238 9.02414 19.1069 9.89309C19.9759 10.762 20.9607 10.82 20.9607 10.82M18.18 8.03933L13.9194 12.2999C13.6308 12.5885 13.4865 12.7328 13.3624 12.8919C13.2161 13.0796 13.0906 13.2827 12.9882 13.4975C12.9014 13.6797 12.8368 13.8732 12.7078 14.2604L12.2946 15.5L12.1609 15.901M20.9607 10.82L16.7001 15.0806C16.4115 15.3692 16.2672 15.5135 16.1081 15.6376C15.9204 15.7839 15.7173 15.9094 15.5025 16.0118C15.3203 16.0986 15.1268 16.1632 14.7396 16.2922L13.5 16.7054L13.099 16.8391M13.099 16.8391L12.6979 16.9728C12.5074 17.0363 12.2973 16.9867 12.1553 16.8447C12.0133 16.7027 11.9637 16.4926 12.0272 16.3021L12.1609 15.901M13.099 16.8391L12.1609 15.901" stroke="#1C274C" stroke-width="1.5"></path> <path d="M8 13H10.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M8 9H14.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M8 17H9.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M19.8284 3.17157C18.6569 2 16.7712 2 13 2H11C7.22876 2 5.34315 2 4.17157 3.17157C3 4.34315 3 6.22876 3 10V14C3 17.7712 3 19.6569 4.17157 20.8284C5.34315 22 7.22876 22 11 22H13C16.7712 22 18.6569 22 19.8284 20.8284C20.7715 19.8853 20.9554 18.4796 20.9913 16" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
-            <h6>ใช้เอกสารน้อย</h6>
-            <p>มีความยืดหยุ่น ปรับเปลี่ยนเอกสารได้ตามอาชีพ</p>
-        </div>
-        <div class="fe-box">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="12" cy="9" r="3" stroke="#1C274C" stroke-width="1.5"></circle> <path d="M17.9691 20C17.81 17.1085 16.9247 15 11.9999 15C7.07521 15 6.18991 17.1085 6.03076 20" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
-            <h6>ผู้ใช้วางใจ</h6>
-            <p>รถสะอาด บริการดี รับฝากรถหรือจักรยนต์ของผู้ใช้</p>
-        </div>
-        <div class="fe-box">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14.1249 12.1178L15.5 13.5M14.1249 12.1178C14.6657 11.5752 15 10.8266 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13C12.8302 13 13.5817 12.6628 14.1249 12.1178Z" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M5 15.2161C4.35254 13.5622 4 11.8013 4 10.1433C4 5.64588 7.58172 2 12 2C16.4183 2 20 5.64588 20 10.1433C20 14.6055 17.4467 19.8124 13.4629 21.6744C12.5343 22.1085 11.4657 22.1085 10.5371 21.6744C9.26474 21.0797 8.13831 20.1439 7.19438 19" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
-            <h6>มีบริการรับส่ง</h6>
-            <p>บริการรับส่งคิดจากระยะทางจริงจากที่ตั้งถึงจุดหมาย</p>
-        </div>
-    </section>
-
-    <section id="product1" class="section-p1">
-        <h2>อยากเช่ารถยนต์ต้องทำอย่างไร ?</h2>
-    </section>
-
-    <section id="sm-banner" class="section-p1">
-        <div class="banner-box b1">
-            <h2>ใช้เอกสารอะไรบ้าง</h2>
-            <span>คลิก "อ่านรายละเอียด" เพื่อเรียนรู้เอกสาร<br>ที่จำเป็นสำหรับดำเนินการเช่า</span>
-            <a href="Deal.html">
-                <button class="white">อ่านรายละเอียด</button>
-            </a>
-        </div>
-        <div class="banner-box b2">
-            <h2>วิธีดำเนินการเช่า</h2>
-            <span>หากคุณไม่เคยเช่ามาก่อน สามารถคลิก "อ่านรายละเอียด"</span>
-            <a href="Deal.html">
-                <button class="white">อ่านรายละเอียด</button>
-            </a>
-        </div>
-    </section>
-
-    <section id="FAQ" class="container">
-        <h2>คำถามที่พบบ่อย</h2>
-        <div class="accordion">
-            <div class="accordion-item">
-                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">มีบริการรับส่งหรือไม่?</span></button>
-                <div class="accordion-content">
-                    <p>ทางร้านมีบริการส่งรับ โดยจะมีเงื่อนไขและค่าบริการตามระยะทาง ซึ่งสามารถอ่านรายละเอียดได้ที่หน้าต่าง Deal Contract</p>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">นำรถมาฝากไว้ได้หรือไม่?</span><!--<span class="icon" aria-hidden="true">--></span></button>
-                <div class="accordion-content">
-                    <p>ผู้เช่าสามารถนำรถมาจอดไว้ภายในร้านได้</p>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">ต้องจองล่วงหน้ากี่วัน?</span></span></button>
-                <div class="accordion-content">
-                    <p>สำหรับวันธรรมดาควรจองล่วงหน้าอย่างน้อย 2-3 วัน แต่หากเป็นช่วงเทศกาลหรือวันหยุดยาวควรจองล่วงหน้าอย่างน้อย 1-2 เดือน</p>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">ใช้เวลาในการเตรียมรถนานเท่าไหร่?</span></button>
-                <div class="accordion-content">
-                    <p>ทางร้านจะเตรียมรถหลังจากผู้เช่าโอนจองแล้วเท่านั้น โดยจะใช้เวลาในการเตรียมรถประมาณ 1-2 ชม.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="section-p1">
-        <div class="col">
-            <img src="https://img2.pic.in.th/pic/22970b258ea55b6a22e0f79b09d03ef7.png" width="125px" class="logo" alt="">
-            <h4>Contact</h4>
-            <p><strong>Address : </strong>35/93  ซอยสิวารัตน์ 1  ถนนบ้านปลายครองครุ  ม.4  ต.นาดี  อ.เมือง  จ.สมุทรสาคร  74000</p>
-            <p><strong>Phone : </strong>081-9424507 (คุณแก้ว) 098-2625255 (คุณโต้)</p>
-            <p><strong>Open : </strong> 06.00 - 18.00 Everyday</p>
-            <div class="follow">
-                <h4>ติดตามเรา</h4>
-                <div class="icon">
-                    <a href="https://www.facebook.com/profile.php?id=100089833762334"><i class="fab fa-facebook"></i></a>
-                    <a href="Deal.html"><i class="fab fa-line"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <h4>เกี่ยวกับ รถเช่ามหาชัย</h4>
-            <a href="index.html">Home</a>
-            <a href="Deal.html">Deal Contract</a>
-            <a href="Car.html">Car</a>
-        </div>
-        <div class="col">
-            <h4>My Account</h4>
-            <a href="signup.html">Sign up</a>
-            <a href="login.html">Log in</a>
-            <h4>ความช่วยเหลือ</h4>
-            <a href="Deal.html">วิธีการจอง</a>
-            <a href="Deal.html">เงื่อนไขการใช้บริการ</a>
-            <a href="index.html">ความช่วยเหลือเพิ่มเติม</a>
-        </div>
-        <div class="col install">
-            <h4>Payment Gateway</h4>
-            <p>Secured Payment Gateway</p>
-            <div src="">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/1200px-MasterCard_Logo.svg.png" width="50px" alt="">
-                <img src="https://1000logos.net/wp-content/uploads/2021/11/VISA-logo.png" width="60px" alt="">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/JCB_logo.svg/2560px-JCB_logo.svg.png" width="40px" alt="">
-                <img src="https://w7.pngwing.com/pngs/604/48/png-transparent-citibank-logo-credit-card-insurance-score-blue-text-trademark.png" width="60px" alt="">
-                <img src="https://newsroom.paypal-corp.com/image/pp_h_rgb_logo_tn.jpg" width="50px" alt="">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/PromptPay-logo.png" width="50px" alt="">
-            </div>
-        </div>
-        <div class="copyright">
-            <p>Copyright © by Tapat Toungsakul 2024 </p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-    <script src="swiper.min.js"></script>
+document.querySelector("#close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none";
+});
+    </script>
 </body>
 </html>
