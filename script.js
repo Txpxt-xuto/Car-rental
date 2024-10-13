@@ -3,14 +3,6 @@ const bar = document.getElementById('bar')
 const nav = document.getElementById('navbar')
 const close = document.getElementById('close')
 
-const express = require('express')
-const app = express();
-const nodemailer = require('nodemailer')
-
-app.listen(3000, () => {
-    console.log('Node app is runnind on port 3000')
-})
-
 if(bar){
   bar.addEventListener('click',() => {
     nav.classList.add('active');
