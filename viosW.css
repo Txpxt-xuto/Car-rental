@@ -456,3 +456,26 @@ footer .copyright {
     position: relative;
     transition: all 5% ease-in-out;
 }
+
+.wrapperpopup h2{
+    margin-top: 0;
+    color: #333;
+}
+
+.wrapperpopup .closepopup{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 20ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.wrapperpopup .contentpopup{
+    max-height: 30%;
+    overflow: auto;
+}
+
+/* Form design */
