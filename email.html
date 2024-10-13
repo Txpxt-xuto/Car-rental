@@ -1,79 +1,64 @@
-<div class="overlay" id="divOne">
-    <div class="wrapperpopup">
-        <h2>กรุณากรอกข้อมูล</h2>
-        <a href="#" class="closepopup">&times;</a>
-        <div class="contactpopup">
-            <div class="containerpopup">
-                <form class="Form" onsubmit="sendemail(); reset(); return false">
-                    <div class="columnPB">
-                        <div class="inputbox">
-                            <label>ชื่อ</label>
-                            <input type="text" id="Name" placeholder="Enter first name">
-                        </div>
-                        <div class="inputbox">
-                            <label>นามสกุล</label>
-                            <input type="text" id="SurName" placeholder="Enter last name">
-                        </div>
-                    </div>
-                    <label>Email Address</label>
-                    <input type="text" id="Email" placeholder="Email@gmail.com">
-                        <label>เบอร์โทรศัพท์</label>
-                        <input type="text" id="Tel" placeholder="098-262-52XX">
-                    <div class="columnPB">
-                        <div class="inputbox">
-                            <label>วันเริ่มต้น</label>
-                            <input type="text" id="Start">
-                        </div>
-                        <div class="inputbox">
-                            <label>วันสิ้นสุด</label>
-                            <input type="text" id="End">
-                        </div>
-                    </div>
-                    <div class="place-box">
-                        <h3>ต้องการให้นำรถไปส่งหรือไม่</h3>
-                        <div class="place-option">
-                            <div class="place">
-                                <input type="radio" id="checkyes" name="place">
-                                <label for="checkyes">ใช่</label>
-                            </div>
-                            <div class="place">
-                                <input type="radio" id="checkno" name="place">
-                                <label for="checkno">ไม่</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="Summit">
-                        <input type="submit" value="ยืนยันการจอง">
-                    </div>
-                </form>
-            </div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script src="index.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("S9xL5d07MbFfyqgRW");
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="container border mt-3 bg-light">
+      <div class="row">
+        <div class="col-md-6 p-5 bg-primary text-white">
+          <h1>Hi there!</h1>
+          <h4>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo,
+          </h4>
         </div>
+        <div class="col-md-6 border-left py-3">
+          <h1>Contact form</h1>
+          <div class="form-group">
+            <h5 for="name">Name</h5>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter name"
+            />
+          </div>
+          <div class="form-group">
+            <h5 for="email">Email</h5>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter email"
+            />
+          </div>
+          <div class="form-group">
+            <h5 for="message">Message</h5>
+            <textarea class="form-control" id="message" rows="3"></textarea>
+          </div>
+          <button class="btn btn-primary" onclick="sendMail()">Submit</button>
+        </div>
+      </div>
     </div>
-</div>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
-    function sendemail(){
-        var Name = document.getElementById("Name").value;
-        var SurName = document.getElementById("SurName").value;
-        var Email = document.getElementById("Email").value;
-        var Tel = document.getElementById("Tel").value;
-        var Start = document.getElementById("Start").value;
-        var End = document.getElementById("End").value;
-
-        var messageEmail = "";
-
-        messageEmail = "ชื่อ :" + Name + "นามสกุล :" + SurName + "Email :" + Email + "เบอร์โทรศัพท์ :"  + Tel + "ต้องกาารเช่ารถตั้งแต่" + Start + "จนถึง" + End
-        
-        Email.send({
-            Host : "smtp.elasticemail.com",
-            Username : "tapatauto9898@gmail.com",
-            Password : "55BC28BF3D6C84D03DA0EAC16D2532E03386",
-            To : 'tapatauto9898@gmail.com',
-            From : Email,
-            Subject : "รายการจองใหม่!",
-            Body : messageEmail
-            }).then(
-        message => alert(message)
-            );
-    }
-</script>
+  </body>
+</html>
