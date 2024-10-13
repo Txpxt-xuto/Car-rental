@@ -36,10 +36,10 @@
                     <img src="https://img5.pic.in.th/file/secure-sv1/b2f96bca70e9e8fadef5a7a704162daa.jpg" width="100%" class="small-img" alt="">
                 </div>
                 <div class="small-img-col">
-                    <img src="https://img5.pic.in.th/file/secure-sv1/b2f96bca70e9e8fadef5a7a704162daa.jpg" width="100%" class="small-img" alt="">
+                    <img src="https://img5.pic.in.th/file/secure-sv1/223470.jpg" width="100%" class="small-img" alt="">
                 </div>
                 <div class="small-img-col">
-                    <img src="https://img5.pic.in.th/file/secure-sv1/b2f96bca70e9e8fadef5a7a704162daa.jpg" width="100%" height="107px" class="small-img" alt="">
+                    <img src="" width="100%" height="107px" class="small-img" alt="">
                 </div>
             </div>
         </div>
@@ -58,23 +58,83 @@
             </a>
         </div>
 
+        
         <div class="overlay" id="divOne">
             <div class="wrapperpopup">
-                <h2>กรูณากรอกข้อมูล</h2>
+                <h2>กรุณากรอกข้อมูล</h2>
                 <a href="#" class="closepopup">&times;</a>
                 <div class="contactpopup">
                     <div class="containerpopup">
-                        <form>
-                            <label>First Name</label>
-                            <input type="text" placeholder="Your First Name">
-                            <label>Last Name</label>
-                            <input type="text" placeholder="Your Last Name">
-                            <label>Last Name</label>
-                            <input type="text" placeholder="Your Last Name">
+                        <form class="Form">
+                            <div class="columnPB">
+                                <div class="inputbox">
+                                    <label>ชื่อ</label>
+                                    <input type="text" id="Name" placeholder="Enter first name">
+                                </div>
+                                <div class="inputbox">
+                                    <label>นามสกุล</label>
+                                    <input type="text" id="SuName" placeholder="Enter last name">
+                                </div>
+                            </div>
+                            <label>Email Address</label>
+                            <input type="text" id="Email" placeholder="Email@gmail.com">
+                                <label>เบอร์โทรศัพท์</label>
+                                <input type="text" id="Tel" placeholder="098-262-52XX">
+                            <div class="columnPB">
+                                <div class="inputbox">
+                                    <label>วันเริ่มต้น</label>
+                                    <input type="datetime-local" id="Start">
+                                </div>
+                                <div class="inputbox">
+                                    <label>วันสิ้นสุด</label>
+                                    <input type="datetime-local" id="End">
+                                </div>
+                            </div>
+                            <div class="place-box">
+                                <h3>ต้องการให้นำรถไปส่งหรือไม่</h3>
+                                <div class="place-option">
+                                    <div class="place">
+                                        <input type="radio" id="checkyes" name="place">
+                                        <label for="checkyes">ใช่</label>
+                                    </div>
+                                    <div class="place">
+                                        <input type="radio" id="checkno" name="place">
+                                        <label for="checkno">ไม่</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Summit">
+                                <button>ยืนยันการจอง</button>
+                            </div>
                         </form>
                     </div>
                 </div>
             </div>
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendmail(){
+                var Name = document.getElementById("Name").value;
+                var SuName = document.getElementById("SuName").value;
+                var Email = document.getElementById("Email").value;
+                var Tel = document.getElementById("Tel").value;
+                var Start = document.getElementById("Start").value;
+                var End = document.getElementById("End").value;
+
+                var messageEmail
+                Email.send({
+                    Host : "smtp.elasticemail.com",
+                    Username : "34850@sksc.ac.th",
+                    Password : "F10510E9FD1F0080CDEBC6457D0B93D3722C",
+                    To : '34850@sksc.ac.th',
+                    From : Email,
+                    Subject : "รายการจองใหม่!",
+                    Body : messageEmail
+                    }).then(
+                message => alert(message)
+                    );
+            }
+        </script>
         <!--<div class="small-img-group">
             <div class="small-img-col">
                 <img src="https://cdn.wheel-size.com/automobile/body/toyota-innova-2013-2015-1602846407.979837.jpg" width="100%" id="MainImg" alt="">
@@ -151,7 +211,7 @@
         smallimg[2].onclick = function(){
             MainImg.src = smallimg[2].src;
         }
-    </script>
+    </>
 
     <script src="script.js"></script>
     <script src="swiper.min.js"></script>
