@@ -428,3 +428,133 @@ footer .copyright {
     text-align: start;
   }
 }
+/* popup */
+.overlay{
+    position: fixed;
+    top: 10%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.wrapperpopup{
+    margin: 70px auto;
+    padding: 20px;
+    background: #e7e7e7;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5% ease-in-out;
+}
+
+.wrapperpopup h2{
+    margin-top: 0;
+    margin-bottom: 5%;
+    color: #333;
+}
+
+.wrapperpopup .closepopup{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 20ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.wrapperpopup .contactpopup{
+    max-height: 30%;
+    overflow: auto;
+}
+
+/* Form design */
+.contentpopup{
+    border-radius: 5px;
+    background-color: #e7e7e7;
+    padding: 20px 0;
+}
+
+input[type=text], textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=datetime-local], textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.Form .columnPB{
+    display: flex;
+    column-gap: 2%;
+}
+
+.Form :where(.place-option, .place){
+    display: flex;
+    align-items: center;
+    column-gap: 20%;
+}
+
+.Form .place{
+    column-gap: 10%;
+    cursor: pointer;
+}
+
+.Form :where(.place input, .place label){
+    cursor: pointer;
+}
+
+.Form .place-box{
+    margin-top: 20px;
+}
+
+.place-box h3{
+    color: #333;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.Form .Summit button{
+    height: 55px;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 400;
+    transition: all 0.2 ease;
+    background-color: rgba(130, 106, 251);
+}
+
+.place input{
+    accent-color: rgba(130, 106, 251);
+}
+.Form .Summit button:hover{
+    background-color: rgb(73, 45, 212);
+}
