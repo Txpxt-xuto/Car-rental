@@ -1,4 +1,4 @@
-const express = require('express');
+/*const express = require('express');
 const app = express();
 const nodemailer = require('nodemailer');
 
@@ -41,3 +41,19 @@ app.post('/sendemail'), (req, res) =>{
         }
     });
 }
+var mailer = require("nodemailer");
+var mail = {
+   from: 'tapatauto9898@email.com', //from email (option)
+   to: 'toungsakul2@email.com', //to email (require)
+   subject: "Subject Text", //subject
+   html: `<p>Test</p>`  //email body
+}
+smtpTransport.sendMail(mail, function(error, response){
+   smtpTransport.close();
+   if(error){
+      //error handler
+   }else{
+      //success handler 
+      console.log('send email success');
+   }
+});*/
