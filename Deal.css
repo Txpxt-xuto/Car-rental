@@ -221,18 +221,27 @@ footer .copyright {
 .Rule{
     width: 100%;
     margin-top: 5%;
+    margin-bottom: 1em;
     text-align: center;
 }
 
 .pdf {
     width: 50%;
-    margin-left: 410px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-left: 26em;
+    margin-top: 5em;
+    margin-bottom: 5em;
 }
 
 .pdf,
 html,
 body {
     height: 100%;
+}
+
+.dealimg{
+    margin-left: 30em;
+    margin-bottom: 1em;
+}
+.last{
+    margin-bottom: 10em;
 }
