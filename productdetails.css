@@ -253,7 +253,7 @@ footer .copyright {
 }
 
 #prodetails .car_price{
-    font-weight: 200;
+    font-weight: 600;
     color: #535252;
 } 
 #prodetails .car_price_time{
@@ -262,10 +262,10 @@ footer .copyright {
 }
 
 #prodetails .rentbtn {
-    display: flex;
+    display: flex;;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 10px 15px;
+    padding: 10px 30px;
     gap: 15px;
     background-color: #41B06E;
     outline: 3px #41B06E solid;
@@ -280,7 +280,7 @@ footer .copyright {
 #prodetails .rentbtn .text {
     color: white;
     font-weight: 700;
-    font-size: 0.8em;
+    font-size: 1.2em;
     transition: 400ms;
 }
 
@@ -538,10 +538,10 @@ input[type=datetime-local], textarea{
     margin-bottom: 8px;
 }
 
-.Form .Summit button{
+.Form button{
     height: 55px;
     width: 100%;
-    color: #fff;
+    color: #000000;
     font-size: 1rem;
     border: none;
     margin-top: 30px;
@@ -555,6 +555,6 @@ input[type=datetime-local], textarea{
 .place input{
     accent-color: rgba(130, 106, 251);
 }
-.Form .Summit button:hover{
-    background-color: rgb(73, 45, 212);
+.Form button:hover{
+    background-color: rgba(90, 106, 251);
 }
