@@ -61,18 +61,69 @@
 
         <div class="overlay" id="divOne">
             <div class="wrapperpopup">
-                <h2>กรูณากรอกข้อมูล</h2>
+                <h2>กรุณากรอกข้อมูล</h2>
                 <a href="#" class="closepopup">&times;</a>
                 <div class="contactpopup">
                     <div class="containerpopup">
-                        <form>
-                            <label>First Name</label>
-                            <input type="text" placeholder="Your First Name">
-                            <label>Last Name</label>
-                            <input type="text" placeholder="Your Last Name">
-                            <label>Last Name</label>
-                            <input type="text" placeholder="Your Last Name">
+                        
+                        
+                        
+                        <form class="Form" onsubmit="sendemail(); reset(); return false">
+                            <div class="columnPB1">
+                                <div class="inputbox">
+                                    <label>ชื่อ</label>
+                                    <input type="text" id="Name" placeholder="first name">
+                                </div>
+                                <div class="inputbox">
+                                    <label>นามสกุล</label>
+                                    <input type="text" id="SurName" placeholder="last name">
+                                </div>
+                            </div>
+                            <label>Email Address</label>
+                            <input type="email" id="Email" placeholder="Email@gmail.com">
+                                <label>เบอร์โทรศัพท์</label>
+                                <input type="tel" id="Tel" placeholder="098-262-52XX">
+                            <div class="columnPB2">
+                                <div class="inputbox">
+                                    <label>วันเริ่มต้น</label>
+                                    <input type="datetime-local" id="Start">
+                                </div>
+                                <div class="inputbox">
+                                    <label>วันสิ้นสุด</label>
+                                    <input type="datetime-local" id="End">
+                                </div>
+                            </div>
+                            <div class="place-box">
+                                <h3>ต้องการให้นำรถไปส่งหรือไม่</h3>
+                                <div class="place-option">
+                                    <div class="place">
+                                        <input type="radio" id="checkyes" name="place">
+                                        <label for="checkyes">ใช่</label>
+                                    </div>
+                                    <div class="place">
+                                        <input type="radio" id="checkno" name="place">
+                                        <label for="checkno">ไม่</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary" onclick="sendMail()">Submit</button>
                         </form>
+                        <script src="https://smtpjs.com/v3/smtp.js">
+                        </script>
+                        <script>
+                            function sendemail(){
+                                Email.send({
+                                    Host : "smtp.elasticemail.com",
+                                    Username : "tapatauto9898@gmail.com",
+                                    Password : "705A36B80E2EDE7065502CBD39B8711A59D0",
+                                    To : 'toungsakul2@gmail.com',
+                                    From : "tapatauto9898@gmail.com",
+                                    Subject : "This is the subject",
+                                    Body : "And this is the body"
+                                }).then(
+                                message => alert(message)
+                            );}
+                        </script>
                     </div>
                 </div>
             </div>
