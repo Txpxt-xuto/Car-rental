@@ -90,6 +90,11 @@ body{
     color: #ff0000;
 }
 
+#mobile{
+    display: none;
+    align-items: center;
+  }
+
 /*Header start*/
 #header{
     display: flex;
@@ -244,4 +249,336 @@ body {
 }
 .last{
     margin-bottom: 10em;
+}
+
+@media (max-width:1024px){
+    .section-p1{
+        margin: 40px 115px;
+    }
+
+    footer{
+        display: grid;
+    }
+
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 60%;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i{
+        color: #1a1a1a;
+        font-size:  24px;
+        padding-left: 20px;
+    }
+
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+
+    #lg-bag,
+    #lg-acc{
+        display: none;
+    }
+
+    #hero {
+        height: 50vh;
+        padding: 0 50px;
+        background-position: top 100% left 0% ;
+    }
+
+    #header{
+        padding: 20px 40px;
+    }
+
+    .dealimg{
+        margin-left: 3em;
+        margin-bottom: 1em;
+        height: 60vh;
+        width: 60vh;
+    }
+    .last{
+        margin-bottom: 10em;
+    }
+}
+
+@media (max-width:500px){
+    .section-p1{
+        margin: 40px 115px;
+    }
+
+    footer{
+        display: grid;
+    }
+
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 60%;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i{
+        color: #1a1a1a;
+        font-size:  24px;
+        padding-left: 20px;
+    }
+
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+
+    #lg-bag,
+    #lg-acc{
+        display: none;
+    }
+
+    #hero {
+        height: 40vh;
+        padding: 0 50px;
+        background-position: top 100% left 10% ;
+    }
+
+    .container {
+        margin: 0 1px;
+        padding: 2rem;
+        width: 40vh;
+    }
+
+    #header{
+        padding: 20px 20px;
+    }
+
+    .dealimg{
+        margin-left: 3em;
+        margin-bottom: 1em;
+        height: 40vh;
+        width: 40vh;
+    }
+    .last{
+        margin-bottom: 10em;
+    }
+}
+
+@media (max-width:400px){
+    .section-p1{
+        margin: 20px 10px;
+    }
+
+    footer{
+        display: grid;
+    }
+
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 60%;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i{
+        color: #1a1a1a;
+        font-size:  24px;
+        padding-left: 20px;
+    }
+
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+
+    #lg-bag,
+    #lg-acc{
+        display: none;
+    }
+
+    #hero {
+        height: 40vh;
+        padding: 0 50px;
+        background-position: top 100% left 10% ;
+    }
+
+    .container {
+        margin: 0 1px;
+        padding: 2rem;
+        width: 40vh;
+    }
+
+    #header{
+        padding: 20px 20px;
+    }
+
+    .dealimg{
+        margin-left: 3em;
+        margin-bottom: 1em;
+        height: 40vh;
+        width: 40vh;
+    }
+    .last{
+        margin-bottom: 10em;
+    }
+
+}
+
+@media (max-width:350px){
+    .section-p1{
+        margin: 20px 10px;
+    }
+
+    footer{
+        display: grid;
+    }
+
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 60%;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i{
+        color: #1a1a1a;
+        font-size:  24px;
+        padding-left: 20px;
+    }
+
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+
+    #lg-bag,
+    #lg-acc{
+        display: none;
+    }
+
+    #hero {
+        height: 40vh;
+        padding: 0 50px;
+        background-position: top 100% left 10% ;
+    }
+
+    .container {
+        margin: 0 1px;
+        padding: 2rem;
+        width: 40vh;
+    }
+
+    #header{
+        padding: 20px 20px;
+    }
+
+    .dealimg{
+        margin-left: 1em;
+        margin-bottom: 1em;
+        height: 40vh;
+        width: 36vh;
+    }
+    .last{
+        margin-bottom: 5em;
+    }
+
 }
