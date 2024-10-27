@@ -412,7 +412,7 @@ footer .copyright {
   white-space: nowrap;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   #product1 .main {
     height: auto;
   }
@@ -422,7 +422,7 @@ footer .copyright {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 500px) {
   #product1 .grid_cards {
     grid-template-columns: 1fr;
   }
@@ -623,13 +623,21 @@ footer .copyright {
   font-weight: 600;
 }
 
-@media (max-width:1024px){
+@media (max-width:1640px){
   .section-p1{
-    margin: 40px 20px;
+    margin: 40px 10px;
   }
 
   footer{
     display: grid;
+  }
+
+  footer .col{
+    margin-left: 10%;
+  }
+
+  #navbar li a{
+    font-size: 160%;
   }
 
   #navbar{
@@ -639,9 +647,9 @@ footer .copyright {
     justify-content: flex-start;
     position: fixed;
     top: 0;
-    right: -300px;
+    right: -100%;
     height: 100vh;
-    width: 60%;
+    width: 45%;
     background-color: #E3E6F3;
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
     padding: 80px 0 0 10px;
@@ -651,6 +659,7 @@ footer .copyright {
   #navbar.active{
     right: 0px;
   }
+
   #navbar li{
     margin-bottom: 25px;
   }
@@ -704,6 +713,28 @@ footer .copyright {
 
   #product1 h2{
     margin: 0px 2vh;
+  }
+
+  footer .icon a{
+    font-size: 30px;
+  }
+
+  footer h4{
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  footer p{
+    margin: 0 0 8px 0;
+    font-size: 15px;
+    color: #6e6e6e;
+  }
+
+  footer a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 16px;
   }
 }
 
@@ -716,6 +747,14 @@ footer .copyright {
     display: grid;
   }
 
+  footer .col{
+    margin-left: 5%;
+  }
+
+  #navbar li a{
+    font-size: 120%;
+  }
+
   #navbar{
     display: flex;
     flex-direction: column;
@@ -723,9 +762,9 @@ footer .copyright {
     justify-content: flex-start;
     position: fixed;
     top: 0;
-    right: -300px;
-    height: 100vh;
-    width: 60%;
+    right: -100%;
+    height: 100%;
+    width: 45%;
     background-color: #E3E6F3;
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
     padding: 80px 0 0 10px;
@@ -735,6 +774,7 @@ footer .copyright {
   #navbar.active{
     right: 0px;
   }
+
   #navbar li{
     margin-bottom: 25px;
   }
@@ -767,6 +807,7 @@ footer .copyright {
   #header{
     padding: 20px 20px;
   }
+
   #page-hero{
     background-position: top 10% left 50% ;
     width: 100%;
@@ -788,6 +829,28 @@ footer .copyright {
   #product1 h2{
     margin: 0px 2vh;
   }
+
+  footer h4{
+    margin-bottom: 20px;
+    font-size: 17px;
+  }
+
+  footer p{
+    margin: 0 0 8px 0;
+    font-size: 15px;
+    color: #6e6e6e;
+  }
+
+  footer a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 16px;
+  }
+
+  footer .icon a{
+    font-size: 30px;
+  }
 }
 
 @media (max-width:400px){
@@ -799,6 +862,14 @@ footer .copyright {
     display: grid;
   }
 
+  footer .col{
+    margin-left: 5%;
+  }
+
+  #navbar li a{
+    font-size: 120%;
+  }
+
   #navbar{
     display: flex;
     flex-direction: column;
@@ -806,9 +877,9 @@ footer .copyright {
     justify-content: flex-start;
     position: fixed;
     top: 0;
-    right: -300px;
-    height: 100vh;
-    width: 60%;
+    right: -100%;
+    height: 100%;
+    width: 50%;
     background-color: #E3E6F3;
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
     padding: 80px 0 0 10px;
@@ -818,6 +889,7 @@ footer .copyright {
   #navbar.active{
     right: 0px;
   }
+
   #navbar li{
     margin-bottom: 25px;
   }
@@ -872,6 +944,28 @@ footer .copyright {
   #product1 h2{
     margin: 0px 2vh;
   }
+
+  footer h4{
+    margin-bottom: 20px;
+    font-size: 17px;
+  }
+
+  footer p{
+    margin: 0 0 8px 0;
+    font-size: 15px;
+    color: #6e6e6e;
+  }
+
+  footer a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 16px;
+  }
+
+  footer .icon a{
+    font-size: 30px;
+  }
 }
 
 @media (max-width:350px){
@@ -883,6 +977,14 @@ footer .copyright {
     display: grid;
   }
 
+  footer .col{
+    margin-left: 5%;
+  }
+
+  #navbar li a{
+    font-size: 100%;
+  }
+
   #navbar{
     display: flex;
     flex-direction: column;
@@ -890,9 +992,9 @@ footer .copyright {
     justify-content: flex-start;
     position: fixed;
     top: 0;
-    right: -300px;
-    height: 100vh;
-    width: 60%;
+    right: -100%;
+    height: 100%;
+    width: 55%;
     background-color: #E3E6F3;
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
     padding: 80px 0 0 10px;
@@ -902,6 +1004,7 @@ footer .copyright {
   #navbar.active{
     right: 0px;
   }
+
   #navbar li{
     margin-bottom: 25px;
   }
@@ -955,5 +1058,27 @@ footer .copyright {
 
   #product1 h2{
     margin: 0px 2vh;
+  }
+
+  footer h4{
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  footer p{
+    margin: 0 0 8px 0;
+    font-size: 15px;
+    color: #6e6e6e;
+  }
+
+  footer a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 16px;
+  }
+
+  footer .icon a{
+    font-size: 35px;
   }
 }
