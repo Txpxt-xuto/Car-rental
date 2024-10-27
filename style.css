@@ -501,11 +501,19 @@ footer .copyright {
 
 @media (max-width:1640px){
   .section-p1{
-    margin: 40px 115px;
+    margin: 40px 10px;
   }
 
   footer{
     display: grid;
+  }
+
+  footer .col{
+    margin-left: 10%;
+  }
+
+  #navbar li a{
+    font-size: 160%;
   }
 
   #navbar{
@@ -515,9 +523,9 @@ footer .copyright {
     justify-content: flex-start;
     position: fixed;
     top: 0;
-    right: -300px;
-    height: 100vh;
-    width: 60%;
+    right: -100%;
+    height: 100%;
+    width: 45%;
     background-color: #E3E6F3;
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
     padding: 80px 0 0 10px;
@@ -590,19 +598,49 @@ footer .copyright {
   }
 
   .container {
-    margin: 0 12.5%;
+    margin: 0 25%;
     padding: 2rem 5%;
-    width: 40vh;
+    width: 50%;
+  }
+
+  footer .icon a{
+    font-size: 30px;
+  }
+
+  footer h4{
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  footer p{
+    margin: 0 0 8px 0;
+    font-size: 15px;
+    color: #6e6e6e;
+  }
+
+  footer a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 16px;
   }
 }
 
 @media (max-width:500px){
   .section-p1{
-    margin: 40px 15px;
+    margin: 40px 10px;
   }
 
   footer{
     display: grid;
+  }
+
+  footer .col{
+    margin-left: 5%;
+  }
+
+  #navbar li a{
+    font-size: 120%;
   }
 
   #navbar{
@@ -612,9 +650,9 @@ footer .copyright {
     justify-content: flex-start;
     position: fixed;
     top: 0;
-    right: -300px;
-    height: 100vh;
-    width: 60%;
+    right: -100%;
+    height: 100%;
+    width: 45%;
     background-color: #E3E6F3;
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
     padding: 80px 0 0 10px;
@@ -683,7 +721,7 @@ footer .copyright {
   }
 
   .container {
-    margin: 0 12.5%;
+    margin: 0 20%;
     padding: 2rem 5%;
     width: 40vh;
   }
@@ -691,15 +729,45 @@ footer .copyright {
   #header{
     padding: 20px 20px;
   }
+
+  footer h4{
+    margin-bottom: 20px;
+    font-size: 17px;
+  }
+
+  footer p{
+    margin: 0 0 8px 0;
+    font-size: 15px;
+    color: #6e6e6e;
+  }
+
+  footer a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 16px;
+  }
+
+  footer .icon a{
+    font-size: 30px;
+  }
 }
 
 @media (max-width:400px){
   .section-p1{
-    margin: 40px 60px;
+    margin: 40px 10px;
   }
 
   footer{
     display: grid;
+  }
+
+  footer .col{
+    margin-left: 5%;
+  }
+
+  #navbar li a{
+    font-size: 120%;
   }
 
   #navbar{
@@ -709,9 +777,9 @@ footer .copyright {
     justify-content: flex-start;
     position: fixed;
     top: 0;
-    right: -300px;
-    height: 100vh;
-    width: 60%;
+    right: -100%;
+    height: 100%;
+    width: 50%;
     background-color: #E3E6F3;
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
     padding: 80px 0 0 10px;
@@ -780,23 +848,53 @@ footer .copyright {
   }
 
   .container {
-    margin: 0 12.5%;
+    margin: 0 auto;
     padding: 2rem;
     width: 40vh;
   }
 
   #header{
     padding: 20px 20px;
+  }
+
+  footer h4{
+    margin-bottom: 20px;
+    font-size: 17px;
+  }
+
+  footer p{
+    margin: 0 0 8px 0;
+    font-size: 15px;
+    color: #6e6e6e;
+  }
+
+  footer a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 16px;
+  }
+
+  footer .icon a{
+    font-size: 30px;
   }
 }
 
 @media (max-width:350px){
   .section-p1{
-    margin: 40px 15px;
+    margin: 40px 10px;
   }
 
   footer{
     display: grid;
+  }
+
+  footer .col{
+    margin-left: 5%;
+  }
+
+  #navbar li a{
+    font-size: 100%;
   }
 
   #navbar{
@@ -806,9 +904,9 @@ footer .copyright {
     justify-content: flex-start;
     position: fixed;
     top: 0;
-    right: -300px;
-    height: 100vh;
-    width: 60%;
+    right: -100%;
+    height: 100%;
+    width: 55%;
     background-color: #E3E6F3;
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
     padding: 80px 0 0 10px;
@@ -877,12 +975,34 @@ footer .copyright {
   }
 
   .container {
-    margin: 0 12.5%;
-    padding: 2rem;
-    width: 40vh;
+    margin: 0 2%;
+    padding: 1rem;
+    width: 100%;
   }
 
   #header{
     padding: 20px 20px;
+  }
+
+  footer h4{
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  footer p{
+    margin: 0 0 8px 0;
+    font-size: 15px;
+    color: #6e6e6e;
+  }
+
+  footer a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 16px;
+  }
+
+  footer .icon a{
+    font-size: 35px;
   }
 }
