@@ -457,13 +457,21 @@ input[type=datetime-local], textarea{
     background-color: rgba(90, 106, 251);
 }
 
-@media (max-width:1024px){
+@media (max-width:1640px){
     .section-p1{
         margin: 20px 10px;
     }
 
     footer{
         display: grid;
+    }
+
+    footer .col{
+        margin-left: 10%;
+    }
+
+    #navbar li a{
+        font-size: 160%;
     }
 
     #navbar{
@@ -473,9 +481,9 @@ input[type=datetime-local], textarea{
         justify-content: flex-start;
         position: fixed;
         top: 0;
-        right: -300px;
-        height: 100vh;
-        width: 60%;
+        right: -100%;
+        height: 100%;
+        width: 45%;
         background-color: #E3E6F3;
         box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
         padding: 80px 0 0 10px;
@@ -581,6 +589,28 @@ input[type=datetime-local], textarea{
         display: flex;
         column-gap: 12%;
     }
+
+    footer .icon a{
+        font-size: 30px;
+    }
+    
+    footer h4{
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    
+    footer p{
+        margin: 0 0 8px 0;
+        font-size: 15px;
+        color: #6e6e6e;
+    }
+    
+    footer a{
+        font-size: 15px;
+        text-decoration: none;
+        color: #222;
+        margin-bottom: 16px;
+    }
 }
 
 @media (max-width:500px){
@@ -592,6 +622,14 @@ input[type=datetime-local], textarea{
         display: grid;
     }
 
+    footer .col{
+        margin-left: 5%;
+    }
+
+    #navbar li a{
+        font-size: 120%;
+    }
+
     #navbar{
         display: flex;
         flex-direction: column;
@@ -599,9 +637,9 @@ input[type=datetime-local], textarea{
         justify-content: flex-start;
         position: fixed;
         top: 0;
-        right: -300px;
-        height: 100vh;
-        width: 60%;
+        right: -100%;
+        height: 100%;
+        width: 45%;
         background-color: #E3E6F3;
         box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
         padding: 80px 0 0 10px;
@@ -701,6 +739,27 @@ input[type=datetime-local], textarea{
         display: flex;
         flex-direction: column;
     }
+    footer h4{
+        margin-bottom: 20px;
+        font-size: 17px;
+    }
+    
+    footer p{
+        margin: 0 0 8px 0;
+        font-size: 15px;
+        color: #6e6e6e;
+    }
+    
+    footer a{
+        font-size: 15px;
+        text-decoration: none;
+        color: #222;
+        margin-bottom: 16px;
+    }
+    
+    footer .icon a{
+        font-size: 30px;
+    }
 }
 
 @media (max-width:400px){
@@ -712,6 +771,14 @@ input[type=datetime-local], textarea{
         display: grid;
     }
 
+    footer .col{
+        margin-left: 5%;
+    }
+
+    #navbar li a{
+        font-size: 120%;
+    }
+
     #navbar{
         display: flex;
         flex-direction: column;
@@ -719,9 +786,9 @@ input[type=datetime-local], textarea{
         justify-content: flex-start;
         position: fixed;
         top: 0;
-        right: -300px;
-        height: 100vh;
-        width: 60%;
+        right: -100%;
+        height: 100%;
+        width: 50%;
         background-color: #E3E6F3;
         box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
         padding: 80px 0 0 10px;
@@ -837,6 +904,27 @@ input[type=datetime-local], textarea{
         flex-direction: column;
     }
 
+    footer h4{
+        margin-bottom: 20px;
+        font-size: 17px;
+    }
+    
+    footer p{
+        margin: 0 0 8px 0;
+        font-size: 15px;
+        color: #6e6e6e;
+    }
+    
+    footer a{
+        font-size: 15px;
+        text-decoration: none;
+        color: #222;
+        margin-bottom: 16px;
+    }
+    
+    footer .icon a{
+        font-size: 30px;
+    }
 }
 
 @media (max-width:350px){
@@ -848,6 +936,14 @@ input[type=datetime-local], textarea{
         display: grid;
     }
 
+    #navbar li a{
+        font-size: 100%;
+    }
+
+    footer .col{
+        margin-left: 5%;
+    }
+    
     #navbar{
         display: flex;
         flex-direction: column;
@@ -855,9 +951,9 @@ input[type=datetime-local], textarea{
         justify-content: flex-start;
         position: fixed;
         top: 0;
-        right: -300px;
-        height: 100vh;
-        width: 60%;
+        right: -100%;
+        height: 100%;
+        width: 55%;
         background-color: #E3E6F3;
         box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
         padding: 80px 0 0 10px;
@@ -956,5 +1052,27 @@ input[type=datetime-local], textarea{
     .columnPB2 {
         display: flex;
         flex-direction: column;
+    }
+
+    footer h4{
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    
+    footer p{
+        margin: 0 0 8px 0;
+        font-size: 15px;
+        color: #6e6e6e;
+    }
+    
+    footer a{
+        font-size: 15px;
+        text-decoration: none;
+        color: #222;
+        margin-bottom: 16px;
+    }
+    
+    footer .icon a{
+        font-size: 35px;
     }
 }
