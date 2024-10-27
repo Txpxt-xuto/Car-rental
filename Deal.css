@@ -251,13 +251,21 @@ body {
     margin-bottom: 10em;
 }
 
-@media (max-width:1024px){
+@media (max-width:1640px){
     .section-p1{
-        margin: 40px 115px;
+        margin: 40px 10px;
     }
 
     footer{
         display: grid;
+    }
+
+    footer .col{
+        margin-left: 10%;
+    }
+    
+    #navbar li a{
+        font-size: 160%;
     }
 
     #navbar{
@@ -267,9 +275,9 @@ body {
         justify-content: flex-start;
         position: fixed;
         top: 0;
-        right: -300px;
-        height: 100vh;
-        width: 60%;
+        right: -100%;
+        height: 100%;
+        width: 45%;
         background-color: #E3E6F3;
         box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
         padding: 80px 0 0 10px;
@@ -319,23 +327,57 @@ body {
     }
 
     .dealimg{
-        margin-left: 3em;
-        margin-bottom: 1em;
-        height: 60vh;
-        width: 60vh;
+        margin-left: 5%;
+        margin-bottom: 5%;
+        height: 100%;
+        width: 90%;
     }
     .last{
-        margin-bottom: 10em;
+        margin-bottom: 10%;
+    }
+
+    .Rule{
+        font-size: 85px;
+    }
+
+    footer .icon a{
+        font-size: 30px;
+    }
+    
+    footer h4{
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    
+    footer p{
+        margin: 0 0 8px 0;
+        font-size: 15px;
+        color: #6e6e6e;
+    }
+    
+    footer a{
+        font-size: 15px;
+        text-decoration: none;
+        color: #222;
+        margin-bottom: 16px;
     }
 }
 
 @media (max-width:500px){
     .section-p1{
-        margin: 40px 115px;
+        margin: 40px 10px;
     }
 
     footer{
         display: grid;
+    }
+
+    footer .col{
+        margin-left: 5%;
+    }
+    
+    #navbar li a{
+        font-size: 120%;
     }
 
     #navbar{
@@ -345,9 +387,9 @@ body {
         justify-content: flex-start;
         position: fixed;
         top: 0;
-        right: -300px;
-        height: 100vh;
-        width: 60%;
+        right: -100%;
+        height: 100%;
+        width: 45%;
         background-color: #E3E6F3;
         box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
         padding: 80px 0 0 10px;
@@ -403,13 +445,39 @@ body {
     }
 
     .dealimg{
-        margin-left: 3em;
-        margin-bottom: 1em;
-        height: 40vh;
-        width: 40vh;
+        margin-left: 5%;
+        margin-bottom: 5%;
+        height: 100%;
+        width: 90%;
     }
     .last{
-        margin-bottom: 10em;
+        margin-bottom: 20%;
+    }
+
+    .Rule{
+        font-size: 55px;
+    }
+
+    footer h4{
+        margin-bottom: 20px;
+        font-size: 17px;
+    }
+    
+    footer p{
+        margin: 0 0 8px 0;
+        font-size: 15px;
+        color: #6e6e6e;
+    }
+    
+    footer a{
+        font-size: 15px;
+        text-decoration: none;
+        color: #222;
+        margin-bottom: 16px;
+    }
+
+    footer .icon a{
+        font-size: 30px;
     }
 }
 
@@ -422,6 +490,14 @@ body {
         display: grid;
     }
 
+    footer .col{
+        margin-left: 5%;
+    }
+    
+    #navbar li a{
+        font-size: 120%;
+    }
+
     #navbar{
         display: flex;
         flex-direction: column;
@@ -429,9 +505,9 @@ body {
         justify-content: flex-start;
         position: fixed;
         top: 0;
-        right: -300px;
-        height: 100vh;
-        width: 60%;
+        right: -100%;
+        height: 100%;
+        width: 50%;
         background-color: #E3E6F3;
         box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
         padding: 80px 0 0 10px;
@@ -449,6 +525,7 @@ body {
         display: flex;
         align-items: center;
     }
+    
 
     #mobile i{
         color: #1a1a1a;
@@ -487,15 +564,40 @@ body {
     }
 
     .dealimg{
-        margin-left: 3em;
-        margin-bottom: 1em;
-        height: 40vh;
-        width: 40vh;
+        margin-left: 5%;
+        margin-bottom: 5%;
+        height: 100%;
+        width: 90%;
     }
     .last{
-        margin-bottom: 10em;
+        margin-bottom: 20%;
     }
 
+    .Rule{
+        font-size: 40px;
+    }
+
+    footer h4{
+        margin-bottom: 20px;
+        font-size: 17px;
+    }
+    
+    footer p{
+        margin: 0 0 8px 0;
+        font-size: 15px;
+        color: #6e6e6e;
+    }
+    
+    footer a{
+        font-size: 15px;
+        text-decoration: none;
+        color: #222;
+        margin-bottom: 16px;
+    }
+
+    footer .icon a{
+        font-size: 30px;
+    }
 }
 
 @media (max-width:350px){
@@ -507,6 +609,14 @@ body {
         display: grid;
     }
 
+    footer .col{
+        margin-left: 5%;
+    }
+    
+    #navbar li a{
+        font-size: 100%;
+    }
+
     #navbar{
         display: flex;
         flex-direction: column;
@@ -514,9 +624,9 @@ body {
         justify-content: flex-start;
         position: fixed;
         top: 0;
-        right: -300px;
-        height: 100vh;
-        width: 60%;
+        right: -100%;
+        height: 100%;
+        width: 55%;
         background-color: #E3E6F3;
         box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
         padding: 80px 0 0 10px;
@@ -572,13 +682,38 @@ body {
     }
 
     .dealimg{
-        margin-left: 1em;
-        margin-bottom: 1em;
-        height: 40vh;
-        width: 36vh;
+        margin-left: 5%;
+        margin-bottom: 5%;
+        height: 100%;
+        width: 90%;
     }
     .last{
-        margin-bottom: 5em;
+        margin-bottom: 20%;
+    }
+    
+    .Rule{
+        font-size: 35px;
     }
 
+    footer h4{
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    
+    footer p{
+        margin: 0 0 8px 0;
+        font-size: 15px;
+        color: #6e6e6e;
+    }
+    
+    footer a{
+        font-size: 15px;
+        text-decoration: none;
+        color: #222;
+        margin-bottom: 16px;
+    }
+
+    footer .icon a{
+        font-size: 35px;
+    }
 }
