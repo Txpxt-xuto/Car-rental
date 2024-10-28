@@ -96,7 +96,7 @@ body {
     flex-direction: column;
   }
   #product1 .main {
-    background: #477cb0;
+    background: #006edb;
     display: grid;
     height: 100vh;
     padding: 16px;
@@ -113,8 +113,8 @@ body {
     display: grid;
     gap: 15px;
     grid-template-columns: repeat(3, 1fr);
-    margin-bottom: 4rem;
-    margin-top: 4rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
   }
   
   #product1 .card_ui {
@@ -264,8 +264,8 @@ body {
   
   #product1 .car_list_characteristics {
     display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    grid-template-columns: repeat(1, 1fr);
   }
   
   #product1 .car_list_characteristics li {
@@ -289,8 +289,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 15px;
-    gap: 15px;
+    padding: 10px 10px;
+    gap: 10px;
     background-color: #41B06E;
     outline: 3px #41B06E solid;
     outline-offset: -3px;
