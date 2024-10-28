@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.card-container {
+    overflow: hidden;
+    width: 70vw;
+}
+
+.cards {
+    display: flex;
+    animation: scroll-left 10s linear infinite; /* ปรับความเร็วการเลื่อน */
+}
+
+.card {
+    min-width: 200px;
+    height: 150px;
+    margin-right: 10px;
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 8px;
+}
+
+/* ปรับปรุง keyframes ให้เลื่อนไปยังความยาวที่พอดีกับการ์ด */
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-70.5%); /* เลื่อนเพียงครึ่งหนึ่งของการ์ด */
+    }
+}
