@@ -17,7 +17,7 @@ body {
 
 .card-container {
     overflow: hidden;
-    width: 70vw;
+    width: 80vw;
 }
 
 .cards {
@@ -26,10 +26,10 @@ body {
 }
 
 .card {
-    width: 1000vh;
-    height: 100%;
-    margin-right: 10px;
-    background-color: #cecece;
+    width: 100vh;
+    height: 60vh;
+    margin-right: 15px;
+    background-color: #f0f0f0;
     color: white;
     display: flex;
     justify-content: center;
@@ -44,7 +44,7 @@ body {
         transform: translateX(0);
     }
     to {
-        transform: translateX(-70.5%); /* เลื่อนเพียงครึ่งหนึ่งของการ์ด */
+        transform: translateX(-117.5%); /* เลื่อนเพียงครึ่งหนึ่งของการ์ด */
     }
 }
 
@@ -217,7 +217,7 @@ body {
   }
   
   #product1 .car_img_content img {
-    width: 80%;
+    width: 120%;
     transition: .3s ease;
   }
   
@@ -264,7 +264,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 30px;
+    padding: 10px 16.5px;
     margin-left: 10px;
     gap: 10px;
     background-color: #41B06E;
