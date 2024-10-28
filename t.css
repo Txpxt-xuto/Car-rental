@@ -236,13 +236,6 @@ body {
     white-space: nowrap;
   }
   
-  #product1 .car_price_container,
-  #product1 .car_list_characteristics li {
-    align-items: center;
-    display: flex;
-    gap: 10px;
-  }
-  
   #product1 .car_price_container {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -262,34 +255,17 @@ body {
     padding-top: 16px;
   }
   
-  #product1 .car_list_characteristics {
-    display: grid;
-    gap: 1px;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  
-  #product1 .car_list_characteristics li {
-    list-style: none;
-    overflow: hidden;
-  }
-  
   #product1 .car_price{
     color: #222;
     font-weight: 500;
-  }
-  
-  #product1 .car_list_characteristics li span {
-    color: #7f8388;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
   }
   
   #product1 .rentbtn {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 10px;
+    padding: 10px 30px;
+    margin-left: 10px;
     gap: 10px;
     background-color: #41B06E;
     outline: 3px #41B06E solid;
@@ -338,7 +314,7 @@ body {
     margin: 0;
     position: relative;
     font-size: 20px;
-    color: var(--primary-color);
+    /*color: var(--primary-color);*/
   }
   
   #product1 .buttonHome:after {
@@ -452,30 +428,4 @@ body {
     color: var(--hovered-color);
     overflow: hidden;
     transition: 0.3s ease-out;
-  }
-  
-  #pagination h2,
-  #pagination p{
-    color: #fff;
-  }
-  
-  #pagination{
-    margin-right: 5px;
-    margin-bottom: 5rem;
-    text-align: center;
-  }
-  
-  #pagination a{
-    text-decoration: none;
-    background-color: #26b585;
-      color: #ffba1e;
-    color: #fff;
-    border-radius: 4px;
-    font-weight: 600;
-    padding: 15px 20px;
-  }
-  
-  #pagination a i{
-    font-size: 16px;
-    font-weight: 600;
   }
