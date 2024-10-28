@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.card-container {
+    overflow: hidden;
+    width: 80vw;
+}
+
+.cards {
+    display: flex;
+    animation: scroll-left 10s linear infinite; /* ปรับความเร็วการเลื่อน */
+}
+
+.card {
+    width: 100vh;
+    height: 60vh;
+    margin-right: 15px;
+    background-color: #f0f0f0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 8px;
+}
+
+/* ปรับปรุง keyframes ให้เลื่อนไปยังความยาวที่พอดีกับการ์ด */
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-117.5%); /* เลื่อนเพียงครึ่งหนึ่งของการ์ด */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#product1 h2{
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+  }
+  #product1 .main {
+    background: #006edb;
+    display: grid;
+    height: 100vh;
+    padding: 16px;
+    place-items: center;
+    width: 100%;
+  }
+  
+  #product1 .container {
+    max-width: 1399px;
+    margin: auto;
+  }
+  
+  #product1 .grid_cards {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  
+  #product1 .card_ui {
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    transition: .3s ease;
+  }
+  
+  #product1 .card_ui:hover {
+    box-shadow: 0px 0px 30px rgb(0 0 0 / 10%);
+    transform: translateY(-10px);
+  }
+  
+  #product1 .car_header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #product1 .car_header_status {
+    display: flex;
+    gap: 10px;
+  }
+  
+  #product1 .status_rating {
+    border: 2px solid #f1f1f1;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  
+  #product1 .status_rating_star {
+    color: #ffba1e;
+  }
+  
+  #product1 .status_rating_number_comments {
+    color: #7f8388;
+  }
+  
+  #product1 .status_disponibility {
+    border-radius: 10px;
+    padding: 5px 12px;
+  }
+  
+  #product1 .status_available {
+    background: rgb(15 167 35 / 10%);
+  }
+  
+  #product1 .status_not_available {
+    background: rgb(201 11 11 / 10%);
+  }
+  
+  #product1 .status_available span {
+    color: #0fa723;
+  }
+  
+  #product1 .status_not_available span,
+  #product1 .button_like:hover i,
+  #product1 .like_icon {
+    color: #c90b0b;
+  }
+  
+  #product1 .button_like {
+    background: none;
+    border: none;
+    height: 32px;
+    width: 32px;
+  }
+  
+  #product1 .button_like i {
+    font-size: 1.25rem;
+  }
+  
+  #product1 .like_icon {
+    animation: animateHeart .5s ease;
+  }
+  
+  @keyframes animateHeart {
+    0% {
+      transform: scale(1);
+    } 50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  #product1 .car_body_img_container {
+    padding: 32px 0px;
+  }
+  
+  #product1 .car_img_content_link:hover img {
+    filter: drop-shadow(0px 10px 60px rgb(255, 255, 255));
+  }
+  
+  #product1 .car_img_content {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #product1 .car_img_content img {
+    width: 120%;
+    transition: .3s ease;
+  }
+  
+  #product1 .car_name {
+    color: #7f8388;
+  }
+  
+  #product1 .car_model_link:hover .car_model {
+    color: #c90b0b;
+  }
+  
+  #product1 .car_model {
+    font-size: 1.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  #product1 .car_price_container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  #product1 .car_price {
+    white-space: nowrap;
+  }
+  
+  #product1 .car_price_time {
+    color: #7f8388;
+  }
+  
+  #product1 .car_footer {
+    border-top: 2px solid rgb(162 166 171 / 20%);
+    margin-top: 16px;
+    padding-top: 16px;
+  }
+  
+  #product1 .car_price{
+    color: #222;
+    font-weight: 500;
+  }
+  
+  #product1 .rentbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 16.5px;
+    margin-left: 10px;
+    gap: 10px;
+    background-color: #41B06E;
+    outline: 3px #41B06E solid;
+    outline-offset: -3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  #product1 .rentbtn .text {
+    color: white;
+    font-weight: 700;
+    font-size: 0.8em;
+    transition: 400ms;
+  }
+  
+  #product1 .rentbtn:hover {
+    background-color: transparent;
+  }
+  
+  #product1 .rentbtn:hover .text {
+    color: #41B06E;
+  }
+  
+  #product1 button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  #product1 button {
+    --primary-color: #111;
+    --hovered-color: #3761ea;
+    position: relative;
+    display: flex;
+    font-weight: 600;
+    font-size: 20px;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  #product1 button p {
+    margin: 0;
+    position: relative;
+    font-size: 20px;
+    /*color: var(--primary-color);*/
+  }
+  
+  #product1 .buttonHome:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background: var(--hovered-color);
+    height: 2px;
+    transition: 0.3s ease-out;
+  }
+  
+  #product1 .buttonHome p::before {
+    position: absolute;
+    content: "Home";
+    width: 0%;
+    inset: 0;
+    color: var(--hovered-color);
+    overflow: hidden;
+    transition: 0.3s ease-out;
+  }
+  
+  #product1 button:hover::after {
+    width: 100%;
+  }
+  
+  #product1 button:hover p::before {
+    width: 100%;
+  }
+  
+  #product1 .buttonRentalCar:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background: var(--hovered-color);
+    height: 2px;
+    transition: 0.3s ease-out;
+  }
+  
+  #product1 .buttonRentalCar p::before {
+    position: absolute;
+    content: "Stock";
+    width: 0%;
+    inset: 0;
+    color: var(--hovered-color);
+    overflow: hidden;
+    transition: 0.3s ease-out;
+  }
+  
+  #product1 .buttonContect:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background: var(--hovered-color);
+    height: 2px;
+    transition: 0.3s ease-out;
+  }
+  
+  #product1 .buttonContect p::before {
+    position: absolute;
+    content: "Contect";
+    width: 0%;
+    inset: 0;
+    color: var(--hovered-color);
+    overflow: hidden;
+    transition: 0.3s ease-out;
+  }
+  
+  #product1 .buttonDocument:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background: var(--hovered-color);
+    height: 2px;
+    transition: 0.3s ease-out;
+  }
+  
+  #product1 .buttonDocument p::before {
+    position: absolute;
+    content: "Document";
+    width: 0%;
+    inset: 0;
+    color: var(--hovered-color);
+    overflow: hidden;
+    transition: 0.3s ease-out;
+  }
+  
+  #product1 .buttonAccount:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background: var(--hovered-color);
+    height: 2px;
+    transition: 0.3s ease-out;
+  }
+  
+  #product1 .buttonAccount p::before {
+    position: absolute;
+    content: "Account";
+    width: 0%;
+    inset: 0;
+    color: var(--hovered-color);
+    overflow: hidden;
+    transition: 0.3s ease-out;
+  }

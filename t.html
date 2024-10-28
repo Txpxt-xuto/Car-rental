@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การ์ดเลื่อนแบบ Loop</title>
+    <link rel="stylesheet" href="t.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="icon" type="image/x-icon" href="https://img5.pic.in.th/file/secure-sv1/-Eng-.png">
+</head>
+<body>
+    <div id="product1" class="card-container">
+        <div class="cards">
+            <div class="card">
+                <article class="card_ui">
+                    <div class="car_header">
+                    <div class="car_header_status">
+                        <div class="status_disponibility status_available">
+                            <span>Available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="car_body">
+                    <div class="car_body_img_container">
+                        <a href="dmax.html" class="car_img_content_link">
+                            <figure class="car_img_content">
+                                <img src="https://img2.pic.in.th/pic/20cf5e809eb225b6c6dfe7333a34e36f.jpg" alt="Isuzu Dmax">
+                            </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <p class="car_name">Isuzu</p>
+                        <div class="car_price_container">
+                            <a href="dmax.html" class="car_model_link">
+                                <h2 class="car_model" title="FOCUS">Dmax</h2>
+                            </a>
+                            <p class="car_price">900฿ <span class="car_price_time">/day</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="car_footer">
+                    <ul class="car_list_characteristics">
+                        <li>
+                            <a href="dmax.html">
+                                <button class="rentbtn">
+                                    <p class="text">Go to book</p>
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                </article>
+            </div>
+            <div class="card">
+                <article class="card_ui">
+                <div class="car_header">
+                    <div class="car_header_status">
+                        <div class="status_disponibility status_available">
+                            <span>Available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="car_body">
+                    <div class="car_body_img_container">
+                        <a href="celerio.html" class="car_img_content_link">
+                            <figure class="car_img_content">
+                                <img src="https://img2.pic.in.th/pic/4f231e38180382e8c8f9f7f9bdf297a8.jpg" width="100%" alt="Suzuki Celerio">
+                            </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <p class="car_name">Suzuki</p>
+                        <div class="car_price_container">
+                            <a href="celerio.html" class="car_model_link">
+                                <h2 class="car_model" title="FOCUS">Celerio</h2>
+                            </a>
+                            <p class="car_price">800฿ <span class="car_price_time">/day</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="car_footer">
+                    <ul class="car_list_characteristics">
+                        <li>
+                            <a href="celerio.html">
+                                <button class="rentbtn">
+                                    <p class="text">Go to book</p>
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                </article>
+            </div>
+            <div class="card">
+                <article class="card_ui">
+                <div class="car_header">
+                    <div class="car_header_status">
+                        <div class="status_disponibility status_available">
+                            <span>Available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="car_body">
+                    <div class="car_body_img_container">
+                        <a href="viosB.html" class="car_img_content_link">
+                            <figure class="car_img_content">
+                                <img src="https://img2.pic.in.th/pic/f969fb4cb39103273167b80f1b6e2af1.jpg" alt="Toyota Vios">
+                            </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <p class="car_name">Toyota</p>
+                        <div class="car_price_container">
+                            <a href="viosB.html" class="car_model_link">
+                                <h2 class="car_model" title="FOCUS">Vios</h2>
+                            </a>
+                            <p class="car_price">800฿ <span class="car_price_time">/day</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="car_footer">
+                    <ul class="car_list_characteristics">
+                        <li>
+                            <a href="viosB.html">
+                                <button class="rentbtn">
+                                    <p class="text">Go to book</p>
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                </article>
+            </div>
+            <div class="card">
+                <article class="card_ui">
+                    <div class="car_header">
+                        <div class="car_header_status">
+                            <div class="status_disponibility status_available">
+                                <span>Available</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car_body">
+                        <div class="car_body_img_container">
+                            <a href="altisT2.html" class="car_img_content_link">
+                                <figure class="car_img_content">
+                                    <img src="https://img5.pic.in.th/file/secure-sv1/b2f96bca70e9e8fadef5a7a704162daa.jpg" alt="Toyota Altis">
+                                </figure>
+                            </a>
+                        </div>
+                        <div>
+                            <p class="car_name">Toyota</p>
+                            <div class="car_price_container">
+                                <a href="altisT2.html" class="car_model_link">
+                                    <h2 class="car_model" title="SENTRA">Altis</h2>
+                                </a>
+                                <p class="car_price">1200฿ <span class="car_price_time">/day</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car_footer">
+                        <ul class="car_list_characteristics">
+                            <li>
+                                <a href="altisT2.html">
+                                    <button class="rentbtn">
+                                        <p class="text">Go to book</p>
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+            <div class="card">
+                <article class="card_ui">
+                    <div class="car_header">
+                    <div class="car_header_status">
+                        <div class="status_disponibility status_available">
+                            <span>Available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="car_body">
+                    <div class="car_body_img_container">
+                        <a href="dmax.html" class="car_img_content_link">
+                            <figure class="car_img_content">
+                                <img src="https://img2.pic.in.th/pic/20cf5e809eb225b6c6dfe7333a34e36f.jpg" alt="Isuzu Dmax">
+                            </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <p class="car_name">Isuzu</p>
+                        <div class="car_price_container">
+                            <a href="dmax.html" class="car_model_link">
+                                <h2 class="car_model" title="FOCUS">Dmax</h2>
+                            </a>
+                            <p class="car_price">900฿ <span class="car_price_time">/day</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="car_footer">
+                    <ul class="car_list_characteristics">
+                        <li>
+                            <a href="dmax.html">
+                                <button class="rentbtn">
+                                    <p class="text">Go to book</p>
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                </article>
+            </div>
+            <div class="card">
+                <article class="card_ui">
+                <div class="car_header">
+                    <div class="car_header_status">
+                        <div class="status_disponibility status_available">
+                            <span>Available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="car_body">
+                    <div class="car_body_img_container">
+                        <a href="celerio.html" class="car_img_content_link">
+                            <figure class="car_img_content">
+                                <img src="https://img2.pic.in.th/pic/4f231e38180382e8c8f9f7f9bdf297a8.jpg" width="100%" alt="Suzuki Celerio">
+                            </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <p class="car_name">Suzuki</p>
+                        <div class="car_price_container">
+                            <a href="celerio.html" class="car_model_link">
+                                <h2 class="car_model" title="FOCUS">Celerio</h2>
+                            </a>
+                            <p class="car_price">800฿ <span class="car_price_time">/day</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="car_footer">
+                    <ul class="car_list_characteristics">
+                        <li>
+                            <a href="celerio.html">
+                                <button class="rentbtn">
+                                    <p class="text">Go to book</p>
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                </article>
+            </div>
+            <div class="card">
+                <article class="card_ui">
+                <div class="car_header">
+                    <div class="car_header_status">
+                        <div class="status_disponibility status_available">
+                            <span>Available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="car_body">
+                    <div class="car_body_img_container">
+                        <a href="viosB.html" class="car_img_content_link">
+                            <figure class="car_img_content">
+                                <img src="https://img2.pic.in.th/pic/f969fb4cb39103273167b80f1b6e2af1.jpg" alt="Toyota Vios">
+                            </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <p class="car_name">Toyota</p>
+                        <div class="car_price_container">
+                            <a href="viosB.html" class="car_model_link">
+                                <h2 class="car_model" title="FOCUS">Vios</h2>
+                            </a>
+                            <p class="car_price">800฿ <span class="car_price_time">/day</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="car_footer">
+                    <ul class="car_list_characteristics">
+                        <li>
+                            <a href="viosB.html">
+                                <button class="rentbtn">
+                                    <p class="text">Go to book</p>
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                </article>
+            </div>
+            <div class="card">
+                <article class="card_ui">
+                    <div class="car_header">
+                        <div class="car_header_status">
+                            <div class="status_disponibility status_available">
+                                <span>Available</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car_body">
+                        <div class="car_body_img_container">
+                            <a href="altisT2.html" class="car_img_content_link">
+                                <figure class="car_img_content">
+                                    <img src="https://img5.pic.in.th/file/secure-sv1/b2f96bca70e9e8fadef5a7a704162daa.jpg" alt="Toyota Altis">
+                                </figure>
+                            </a>
+                        </div>
+                        <div>
+                            <p class="car_name">Toyota</p>
+                            <div class="car_price_container">
+                                <a href="altisT2.html" class="car_model_link">
+                                    <h2 class="car_model" title="SENTRA">Altis</h2>
+                                </a>
+                                <p class="car_price">1200฿ <span class="car_price_time">/day</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car_footer">
+                        <ul class="car_list_characteristics">
+                            <li>
+                                <a href="altisT2.html">
+                                    <button class="rentbtn">
+                                        <p class="text">Go to book</p>
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+            <div class="card">
+                <article class="card_ui">
+                    <div class="car_header">
+                    <div class="car_header_status">
+                        <div class="status_disponibility status_available">
+                            <span>Available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="car_body">
+                    <div class="car_body_img_container">
+                        <a href="dmax.html" class="car_img_content_link">
+                            <figure class="car_img_content">
+                                <img src="https://img2.pic.in.th/pic/20cf5e809eb225b6c6dfe7333a34e36f.jpg" alt="Isuzu Dmax">
+                            </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <p class="car_name">Isuzu</p>
+                        <div class="car_price_container">
+                            <a href="dmax.html" class="car_model_link">
+                                <h2 class="car_model" title="FOCUS">Dmax</h2>
+                            </a>
+                            <p class="car_price">900฿ <span class="car_price_time">/day</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="car_footer">
+                    <ul class="car_list_characteristics">
+                        <li>
+                            <a href="dmax.html">
+                                <button class="rentbtn">
+                                    <p class="text">Go to book</p>
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                </article>
+            </div>
+            <div class="card">
+                <article class="card_ui">
+                <div class="car_header">
+                    <div class="car_header_status">
+                        <div class="status_disponibility status_available">
+                            <span>Available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="car_body">
+                    <div class="car_body_img_container">
+                        <a href="celerio.html" class="car_img_content_link">
+                            <figure class="car_img_content">
+                                <img src="https://img2.pic.in.th/pic/4f231e38180382e8c8f9f7f9bdf297a8.jpg" width="100%" alt="Suzuki Celerio">
+                            </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <p class="car_name">Suzuki</p>
+                        <div class="car_price_container">
+                            <a href="celerio.html" class="car_model_link">
+                                <h2 class="car_model" title="FOCUS">Celerio</h2>
+                            </a>
+                            <p class="car_price">800฿ <span class="car_price_time">/day</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="car_footer">
+                    <ul class="car_list_characteristics">
+                        <li>
+                            <a href="celerio.html">
+                                <button class="rentbtn">
+                                    <p class="text">Go to book</p>
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                </article>
+            </div>
+            <div class="card">
+                <article class="card_ui">
+                <div class="car_header">
+                    <div class="car_header_status">
+                        <div class="status_disponibility status_available">
+                            <span>Available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="car_body">
+                    <div class="car_body_img_container">
+                        <a href="viosB.html" class="car_img_content_link">
+                            <figure class="car_img_content">
+                                <img src="https://img2.pic.in.th/pic/f969fb4cb39103273167b80f1b6e2af1.jpg" alt="Toyota Vios">
+                            </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <p class="car_name">Toyota</p>
+                        <div class="car_price_container">
+                            <a href="viosB.html" class="car_model_link">
+                                <h2 class="car_model" title="FOCUS">Vios</h2>
+                            </a>
+                            <p class="car_price">800฿ <span class="car_price_time">/day</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="car_footer">
+                    <ul class="car_list_characteristics">
+                        <li>
+                            <a href="viosB.html">
+                                <button class="rentbtn">
+                                    <p class="text">Go to book</p>
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                </article>
+            </div>
+            <div class="card">
+                <article class="card_ui">
+                    <div class="car_header">
+                        <div class="car_header_status">
+                            <div class="status_disponibility status_available">
+                                <span>Available</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car_body">
+                        <div class="car_body_img_container">
+                            <a href="altisT2.html" class="car_img_content_link">
+                                <figure class="car_img_content">
+                                    <img src="https://img5.pic.in.th/file/secure-sv1/b2f96bca70e9e8fadef5a7a704162daa.jpg" alt="Toyota Altis">
+                                </figure>
+                            </a>
+                        </div>
+                        <div>
+                            <p class="car_name">Toyota</p>
+                            <div class="car_price_container">
+                                <a href="altisT2.html" class="car_model_link">
+                                    <h2 class="car_model" title="SENTRA">Altis</h2>
+                                </a>
+                                <p class="car_price">1200฿ <span class="car_price_time">/day</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car_footer">
+                        <ul class="car_list_characteristics">
+                            <li>
+                                <a href="altisT2.html">
+                                    <button class="rentbtn">
+                                        <p class="text">Go to book</p>
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+            <div class="card">
+                <article class="card_ui">
+                    <div class="car_header">
+                    <div class="car_header_status">
+                        <div class="status_disponibility status_available">
+                            <span>Available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="car_body">
+                    <div class="car_body_img_container">
+                        <a href="dmax.html" class="car_img_content_link">
+                            <figure class="car_img_content">
+                                <img src="https://img2.pic.in.th/pic/20cf5e809eb225b6c6dfe7333a34e36f.jpg" alt="Isuzu Dmax">
+                            </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <p class="car_name">Isuzu</p>
+                        <div class="car_price_container">
+                            <a href="dmax.html" class="car_model_link">
+                                <h2 class="car_model" title="FOCUS">Dmax</h2>
+                            </a>
+                            <p class="car_price">900฿ <span class="car_price_time">/day</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="car_footer">
+                    <ul class="car_list_characteristics">
+                        <li>
+                            <a href="dmax.html">
+                                <button class="rentbtn">
+                                    <p class="text">Go to book</p>
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                </article>
+            </div>
+            <div class="card">
+                <article class="card_ui">
+                <div class="car_header">
+                    <div class="car_header_status">
+                        <div class="status_disponibility status_available">
+                            <span>Available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="car_body">
+                    <div class="car_body_img_container">
+                        <a href="celerio.html" class="car_img_content_link">
+                            <figure class="car_img_content">
+                                <img src="https://img2.pic.in.th/pic/4f231e38180382e8c8f9f7f9bdf297a8.jpg" width="100%" alt="Suzuki Celerio">
+                            </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <p class="car_name">Suzuki</p>
+                        <div class="car_price_container">
+                            <a href="celerio.html" class="car_model_link">
+                                <h2 class="car_model" title="FOCUS">Celerio</h2>
+                            </a>
+                            <p class="car_price">800฿ <span class="car_price_time">/day</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="car_footer">
+                    <ul class="car_list_characteristics">
+                        <li>
+                            <a href="celerio.html">
+                                <button class="rentbtn">
+                                    <p class="text">Go to book</p>
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                </article>
+            </div>
+            <div class="card">
+                <article class="card_ui">
+                <div class="car_header">
+                    <div class="car_header_status">
+                        <div class="status_disponibility status_available">
+                            <span>Available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="car_body">
+                    <div class="car_body_img_container">
+                        <a href="viosB.html" class="car_img_content_link">
+                            <figure class="car_img_content">
+                                <img src="https://img2.pic.in.th/pic/f969fb4cb39103273167b80f1b6e2af1.jpg" alt="Toyota Vios">
+                            </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <p class="car_name">Toyota</p>
+                        <div class="car_price_container">
+                            <a href="viosB.html" class="car_model_link">
+                                <h2 class="car_model" title="FOCUS">Vios</h2>
+                            </a>
+                            <p class="car_price">800฿ <span class="car_price_time">/day</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="car_footer">
+                    <ul class="car_list_characteristics">
+                        <li>
+                            <a href="viosB.html">
+                                <button class="rentbtn">
+                                    <p class="text">Go to book</p>
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                </article>
+            </div>
+            <div class="card">
+                <article class="card_ui">
+                    <div class="car_header">
+                        <div class="car_header_status">
+                            <div class="status_disponibility status_available">
+                                <span>Available</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car_body">
+                        <div class="car_body_img_container">
+                            <a href="altisT2.html" class="car_img_content_link">
+                                <figure class="car_img_content">
+                                    <img src="https://img5.pic.in.th/file/secure-sv1/b2f96bca70e9e8fadef5a7a704162daa.jpg" alt="Toyota Altis">
+                                </figure>
+                            </a>
+                        </div>
+                        <div>
+                            <p class="car_name">Toyota</p>
+                            <div class="car_price_container">
+                                <a href="altisT2.html" class="car_model_link">
+                                    <h2 class="car_model" title="SENTRA">Altis</h2>
+                                </a>
+                                <p class="car_price">1200฿ <span class="car_price_time">/day</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car_footer">
+                        <ul class="car_list_characteristics">
+                            <li>
+                                <a href="altisT2.html">
+                                    <button class="rentbtn">
+                                        <p class="text">Go to book</p>
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
