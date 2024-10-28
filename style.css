@@ -499,128 +499,6 @@ footer .copyright {
   margin-top: 50px;
 }
 
-/*
-.containerofslide {
-  position: relative;
-  max-width: 30%;
-  min-width: 40%;
-  height: 600px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.cardofslide {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: inline-block;
-  width: 90%;
-  height: 80%;
-  background: rgb(5, 128, 46);
-  margin: 5px;
-  transition: transform 0.9s, background 0.3s ease-in-out;
-}
-
-.cardofslide:nth-child(1) {
-  transform: translate(-170%, -50%);
-}
-
-.cardofslide:nth-child(2) {
-  transform: translate(-50%, -50%);
-}
-
-.cardofslide:nth-child(3) {
-  transform: translate(70%, -50%);
-}
-
-.cardofslide:nth-child(4) {
-  transform: translate(190%, -50%);
-}
-
-.cardofslide:nth-child(5) {
-  transform: translate(310%, -50%);
-}
-
-.activeofslide {
-  background: rgb(7, 192, 68);
-  transform: translate(-50%, -50%) scale(1.1) !important;
-}
-
-.nextofslide .cardofslide:nth-child(1) {
-  transform: translate(-290%, -50%);
-}
-
-.nextofslide .cardofslide:nth-child(2) {
-  transform: translate(-170%, -50%);
-}
-
-.nextofslide .cardofslide:nth-child(3) {
-  transform: translate(-50%, -50%);
-}
-
-.nextofslide .cardofslide:nth-child(4) {
-  transform: translate(70%, -50%);
-}
-
-.nextofslide .cardofslide:nth-child(5) {
-  transform: translate(190%, -50%);
-}
-
-.resetofslide .cardofslide {
-  transition: none;
-}
-
-.resetofslide .cardofslide .cardofslide:nth-child(1) {
-  transform: translate(-170%, -50%);
-}
-
-.resetofslide .cardofslide .cardofslide:nth-child(2) {
-  transform: translate(-50%, -50%);
-}
-
-.resetofslide .cardofslide .cardofslide:nth-child(3) {
-  transform: translate(70%, -50%);
-}
-
-.resetofslide .cardofslide .cardofslide:nth-child(4) {
-  transform: translate(190%, -50%);
-}
-
-.resetofslide .cardofslide .cardofslide:nth-child(5) {
-  transform: translate(310%, -50%);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #product1 h2{
   justify-content: center;
   align-items: left;
@@ -1010,7 +888,6 @@ footer .copyright {
   font-size: 16px;
   font-weight: 600;
 }
-*/
 
 @media (max-width:1640px){
   .section-p1{
