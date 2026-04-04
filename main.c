@@ -35,7 +35,7 @@ int countDay(int dayOfYear,int i);
 
 
 
-
+/*
 
 
 void Menu()
@@ -725,12 +725,47 @@ void setRangeZero(char *filename, int targetRow, int startCol, int endCol)
     printf("Unbooking Successfully!\n");
 }
 
-
+*/
 
 
 
 
 int main()
 {
-     text/html
+    printf("Content-type: text/html\n\n");
+
+    char *data = getenv("QUERY_STRING");
+
+    if(data == NULL)
+    {
+        printf("<h1>No data received</h1>");
+        return 0;
+    }
+
+    char fname[50], lname[50], tel[50], email[100];
+    char start[50], end[50];
+
+    sscanf(data,"fname=%[^&]&lname=%[^&]&tel=%[^&]&email=%[^&]&start=%[^&]&end=%[^&]",fname, lname, tel, email, start, end);
+
+    // 🔥 บันทึก CSV
+    FILE *fp = fopen("CUSTOMER.csv", "a");
+
+    if(fp == NULL)
+    {
+        printf("<h1>File error</h1>");
+        return 0;
+    }
+
+    fprintf(fp, "%s,%s,%s,%s,%s,%s\n",fname, lname, tel, email, start, end);
+    fclose(fp);
+
+    // 🔥 แสดงผล
+    printf("<h1>Booking Success!</h1>");
+    printf("<p>%s %s</p>", fname, lname);
+    printf("<p>Tel: %s</p>", tel);
+    printf("<p>Email: %s</p>", email);
+    printf("<p>Start: %s</p>", start);
+    printf("<p>End: %s</p>", end);
+
+    return 0;
 }
