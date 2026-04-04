@@ -732,5 +732,5 @@ void setRangeZero(char *filename, int targetRow, int startCol, int endCol)
 
 int main()
 {
-    Menu();
+     text/html
 }
