@@ -4,20 +4,20 @@ const nav = document.getElementById('navbar')
 const close = document.getElementById('close')
 
 
-const BASE = "http://localhost:5000";
+const BASE = "http://127.0.0.1:5500/dmax.html?place=on#divOne";
 
 document.getElementById("form").addEventListener("submit", async (e) => {
     e.preventDefault();
     const msg = document.getElementById("msg");
 
     const data = {
-        firstname: document.getElementById("firstname").value,
-        lastname:  document.getElementById("lastname").value,
-        phone:     document.getElementById("phone").value,
-        email:     document.getElementById("email").value,
-        start:     document.getElementById("start").value,
-        end:       document.getElementById("end").value,
-        delivery:  document.getElementById("delivery").checked ? "ใช่" : "ไม่",
+        firstname: document.getElementById("Name").value,
+        lastname:  document.getElementById("SurName").value,
+        phone:     document.getElementById("Tel").value,
+        email:     document.getElementById("Email").value,
+        start:     document.getElementById("Start").value,
+        end:       document.getElementById("End").value,
+        delivery:  document.getElementById("checkyes").checked ? "ใช่" : "ไม่",
     };
 
     try {
