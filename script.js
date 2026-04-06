@@ -2,12 +2,6 @@
 const bar = document.getElementById('bar')
 const nav = document.getElementById('navbar')
 const close = document.getElementById('close')
-const start = document.getElementById("Start").value;
-const end = document.getElementById("End").value;
-const fname = document.getElementById("Name").value;
-const lname = document.getElementById("SurName").value;
-const email = document.getElementById("Email").value;
-const tel = document.getElementById("Tel").value;
 
 document.getElementById("bookingForm").addEventListener("submit", function(e) {
     e.preventDefault();
@@ -19,16 +13,19 @@ document.getElementById("bookingForm").addEventListener("submit", function(e) {
     const email = document.getElementById("Email").value;
     const tel = document.getElementById("Tel").value;
 
-    // 🔥 ส่งไป CGI
-    const url = `/cgi-bin/main.cgi?fname=${fname}&lname=${lname}&tel=${tel}&email=${email}&start=${start}&end=${end}`;
+    const params = new URLSearchParams({
+        fname, lname, tel, email, start, end
+    });
+
+    const url = `/cgi-bin/main.cgi?${params.toString()}`;
 
     fetch(url)
     .then(response => response.text())
     .then(data => {
-        document.body.innerHTML = data; // แสดงผลจาก C
+        document.body.innerHTML = data;
     })
     .catch(err => {
-        console.error(err);
+        console.error("ERROR:", err);
     });
 });
 
