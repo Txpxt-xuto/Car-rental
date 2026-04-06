@@ -3,31 +3,52 @@ const bar = document.getElementById('bar')
 const nav = document.getElementById('navbar')
 const close = document.getElementById('close')
 
-document.getElementById("bookingForm").addEventListener("submit", function(e) {
+
+const BASE = "http://localhost:5000";
+
+document.getElementById("form").addEventListener("submit", async (e) => {
     e.preventDefault();
+    const msg = document.getElementById("msg");
 
-    const start = document.getElementById("Start").value;
-    const end = document.getElementById("End").value;
-    const fname = document.getElementById("Name").value;
-    const lname = document.getElementById("SurName").value;
-    const email = document.getElementById("Email").value;
-    const tel = document.getElementById("Tel").value;
+    const data = {
+        firstname: document.getElementById("firstname").value,
+        lastname:  document.getElementById("lastname").value,
+        phone:     document.getElementById("phone").value,
+        email:     document.getElementById("email").value,
+        start:     document.getElementById("start").value,
+        end:       document.getElementById("end").value,
+        delivery:  document.getElementById("delivery").checked ? "ใช่" : "ไม่",
+    };
 
-    const params = new URLSearchParams({
-        fname, lname, tel, email, start, end
-    });
-
-    const url = `/cgi-bin/main.cgi?${params.toString()}`;
-
-    fetch(url)
-    .then(response => response.text())
-    .then(data => {
-        document.body.innerHTML = data;
-    })
-    .catch(err => {
-        console.error("ERROR:", err);
-    });
+    try {
+        const res = await fetch(`${BASE}/save`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data),
+        });
+        const result = await res.json();
+        if (result.success) {
+            msg.style.color = "green";
+            msg.textContent = "บันทึกสำเร็จ!";
+            document.getElementById("form").reset();
+        } else {
+            throw new Error(result.error);
+        }
+    } catch (err) {
+        msg.style.color = "red";
+        msg.textContent = "เกิดข้อผิดพลาด: " + err.message;
+    }
 });
+
+function exportCSV() {
+    window.open(`${BASE}/export`, "_blank");
+}
+
+
+
+
+
+
 
 if(bar){
   bar.addEventListener('click',() => {
