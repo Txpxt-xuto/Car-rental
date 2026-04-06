@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #define MAX_ROW 1000
 #define MAX_COL 500
+#define MAX 200
 
 char customers[MAX_ROW][MAX_COL][100];
 
@@ -733,39 +734,55 @@ void setRangeZero(char *filename, int targetRow, int startCol, int endCol)
 int main()
 {
     printf("Content-type: text/html\n\n");
-
-    char *data = getenv("QUERY_STRING");
-
-    if(data == NULL)
-    {
-        printf("<h1>No data received</h1>");
-        return 0;
-    }
-
-    char fname[50], lname[50], tel[50], email[100];
-    char start[50], end[50];
-
-    sscanf(data,"fname=%[^&]&lname=%[^&]&tel=%[^&]&email=%[^&]&start=%[^&]&end=%[^&]",fname, lname, tel, email, start, end);
-
-    // 🔥 บันทึก CSV
-    FILE *fp = fopen("CUSTOMER.csv", "a");
-
-    if(fp == NULL)
-    {
-        printf("<h1>File error</h1>");
-        return 0;
-    }
-
-    fprintf(fp, "%s,%s,%s,%s,%s,%s\n",fname, lname, tel, email, start, end);
-    fclose(fp);
-
-    // 🔥 แสดงผล
-    printf("<h1>Booking Success!</h1>");
-    printf("<p>%s %s</p>", fname, lname);
-    printf("<p>Tel: %s</p>", tel);
-    printf("<p>Email: %s</p>", email);
-    printf("<p>Start: %s</p>", start);
-    printf("<p>End: %s</p>", end);
-
+    printf("<h1>CGI ทำงานแล้ว</h1>");
     return 0;
+    /*printf("Content-type: text/html\n\n");
+
+    char *query = getenv("QUERY_STRING");
+
+    if(query == NULL){
+        printf("No data received");
+        return 0;
+    }
+
+    // ตัวแปรเก็บค่า
+    char fname[MAX] = "", lname[MAX] = "", tel[MAX] = "";
+    char email[MAX] = "", start[MAX] = "", end[MAX] = "";
+
+    // copy query เพราะ strtok จะทำลาย string
+    char data[1000];
+    strcpy(data, query);
+
+    // แยกด้วย &
+    char *token = strtok(data, "&");
+
+    while(token != NULL){
+        char key[50], value[200];
+
+        sscanf(token, "%[^=]=%s", key, value);
+
+        if(strcmp(key, "fname") == 0) strcpy(fname, value);
+        else if(strcmp(key, "lname") == 0) strcpy(lname, value);
+        else if(strcmp(key, "tel") == 0) strcpy(tel, value);
+        else if(strcmp(key, "email") == 0) strcpy(email, value);
+        else if(strcmp(key, "start") == 0) strcpy(start, value);
+        else if(strcmp(key, "end") == 0) strcpy(end, value);
+
+        token = strtok(NULL, "&");
+    }
+
+    // 🔥 เขียน CSV
+    FILE *fp = fopen("data.csv", "a");
+
+    if(fp != NULL){
+        fprintf(fp, "%s,%s,%s,%s,%s,%s\n",
+            fname, lname, tel, email, start, end);
+        fclose(fp);
+    }
+
+    // แสดงผล
+    printf("<h2>บันทึกข้อมูลสำเร็จ</h2>");
+    printf("<p>%s %s</p>", fname, lname);
+
+    return 0;*/
 }
