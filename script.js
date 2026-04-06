@@ -4,7 +4,7 @@ const nav = document.getElementById('navbar')
 const close = document.getElementById('close')
 
 
-const BASE = "http://127.0.0.1:5500/dmax.html?place=on#divOne";
+const BASE = "http://localhost:5000";
 
 document.getElementById("form").addEventListener("submit", async (e) => {
     e.preventDefault();
