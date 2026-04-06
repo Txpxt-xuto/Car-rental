@@ -67,7 +67,7 @@
                     <div class="containerpopup">
                         
                         
-                        <form id="bookingForm" class="Form" onsubmit="sendemail(); reset(); return false">
+                        <form id="bookingForm" class="Form" >
                             <div class="columnPB1">
                                 <div class="inputbox">
                                     <label>ชื่อ</label>
@@ -105,23 +105,46 @@
                                     </div>
                                 </div>
                             </div>
-                            <button class="btn btn-primary" onclick="sendMail()">Submit</button>
+                            <button type="submit" class="btn btn-primary" onclick="sendemail()">Submit</button>
                         </form>
                         <script src="https://smtpjs.com/v3/smtp.js">
                         </script>
                         <script>
-                            function sendemail(){
-                                Email.send({
-                                    Host : "smtp.elasticemail.com",
-                                    Username : "tapatauto9898@gmail.com",
-                                    Password : "705A36B80E2EDE7065502CBD39B8711A59D0",
-                                    To : 'toungsakul2@gmail.com',
-                                    From : "tapatauto9898@gmail.com",
-                                    Subject : "This is the subject",
-                                    Body : "And this is the body"
-                                }).then(
-                                message => alert(message)
-                            );}
+                            function sendemail() 
+                            {
+
+                            // ดึงค่าจาก input
+                            let name = document.getElementById("Name").value;
+                            let surname = document.getElementById("SurName").value;
+                            let email = document.getElementById("Email").value;
+                            let tel = document.getElementById("Tel").value;
+                            let start = document.getElementById("Start").value;
+                            let end = document.getElementById("End").value;
+
+                            let place = document.querySelector('input[name="place"]:checked');
+                            let placeValue = place ? place.nextElementSibling.innerText : "ไม่ได้เลือก";
+
+                            // รวมข้อความ
+                            let body = `
+                            ชื่อ: ${name} ${surname} <br>
+                            Email: ${email} <br>
+                            เบอร์โทร: ${tel} <br>
+                            เริ่ม: ${start} <br>
+                            สิ้นสุด: ${end} <br>
+                            ส่งรถ: ${placeValue}
+                            `;
+
+                            Email.send({
+                            Host : "smtp.elasticemail.com",
+                            Username : "tapatauto9898@gmail.com",
+                            Password : "705A36B80E2EDE7065502CBD39B8711A59D0",
+                            To : 'toungsakul2@gmail.com',
+                            From : "tapatauto9898@gmail.com",
+                            Subject : "New Booking",
+                            Body : body
+                            }).then(message => alert("ส่งสำเร็จ: " + message)
+                            );
+                        }
                         </script>
                     </div>
                 </div>
