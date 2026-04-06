@@ -65,31 +65,29 @@
                 <a href="#" class="closepopup">&times;</a>
                 <div class="contactpopup">
                     <div class="containerpopup">
-                        
-                        
                         <form id="bookingForm" class="Form" >
                             <div class="columnPB1">
                                 <div class="inputbox">
-                                    <label>ชื่อ</label>
-                                    <input type="text" id="Name" placeholder="first name">
+                                    <label>Firstname</label>
+                                    <input type="text" id="Name" placeholder="กรอกชื่อ" required>
                                 </div>
                                 <div class="inputbox">
-                                    <label>นามสกุล</label>
-                                    <input type="text" id="SurName" placeholder="last name">
+                                    <label>Lastname</label>
+                                    <input type="text" id="SurName" placeholder="กรอกนามสกุล" required>
                                 </div>
                             </div>
-                            <label>Email Address</label>
-                            <input type="email" id="Email" placeholder="Email@gmail.com">
-                                <label>เบอร์โทรศัพท์</label>
-                                <input type="tel" id="Tel" placeholder="098-262-52XX">
+                            <label>Email</label>
+                            <input type="email" id="Email" placeholder="example@email.com" required>
+                                <label>Telephone</label>
+                                <input type="tel" id="Tel" placeholder="0xx-xxx-xxxx" required>
                             <div class="columnPB2">
                                 <div class="inputbox">
                                     <label>วันเริ่มต้น</label>
-                                    <input type="datetime-local" id="Start">
+                                    <input type="datetime-local" id="Start" required>
                                 </div>
                                 <div class="inputbox">
                                     <label>วันสิ้นสุด</label>
-                                    <input type="datetime-local" id="End">
+                                    <input type="datetime-local" id="End" required>
                                 </div>
                             </div>
                             <div class="place-box">
@@ -105,47 +103,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary" onclick="sendemail()">Submit</button>
+                            <div class="btn btn-primary">
+                                <button type="submit" id="saveBtn">Submit</button>
+                            </div>
                         </form>
-                        <script src="https://smtpjs.com/v3/smtp.js">
-                        </script>
-                        <script>
-                            function sendemail() 
-                            {
-
-                            // ดึงค่าจาก input
-                            let name = document.getElementById("Name").value;
-                            let surname = document.getElementById("SurName").value;
-                            let email = document.getElementById("Email").value;
-                            let tel = document.getElementById("Tel").value;
-                            let start = document.getElementById("Start").value;
-                            let end = document.getElementById("End").value;
-
-                            let place = document.querySelector('input[name="place"]:checked');
-                            let placeValue = place ? place.nextElementSibling.innerText : "ไม่ได้เลือก";
-
-                            // รวมข้อความ
-                            let body = `
-                            ชื่อ: ${name} ${surname} <br>
-                            Email: ${email} <br>
-                            เบอร์โทร: ${tel} <br>
-                            เริ่ม: ${start} <br>
-                            สิ้นสุด: ${end} <br>
-                            ส่งรถ: ${placeValue}
-                            `;
-
-                            Email.send({
-                            Host : "smtp.elasticemail.com",
-                            Username : "tapatauto9898@gmail.com",
-                            Password : "705A36B80E2EDE7065502CBD39B8711A59D0",
-                            To : 'toungsakul2@gmail.com',
-                            From : "tapatauto9898@gmail.com",
-                            Subject : "New Booking",
-                            Body : body
-                            }).then(message => alert("ส่งสำเร็จ: " + message)
-                            );
-                        }
-                        </script>
                     </div>
                 </div>
             </div>
